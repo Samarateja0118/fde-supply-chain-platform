@@ -54,8 +54,12 @@ def test_upload_review_metrics(tmp_path, monkeypatch, catalog):
     assert c.get("/health").json()["ok"]
     r = c.post("/documents", files={"file": ("inv.pdf", pdf.read_bytes(), "application/pdf")}).json()
     assert r["status"] == "auto_approved", r
-    r2 = c.post("/documents", files={"file": ("inv2.pdf", pdf.read_bytes(), "application/pdf")}).json()
-    assert r2["status"] == "needs_review" and "duplicate_invoice" in r2["reasons"]
+    # same invoice number re-sent as a new scan (different bytes) -> caught as a duplicate invoice
+    pdf2 = tmp_path / "inv_rescan.pdf"
+    render(truth, style, pdf2, random.Random(2))
+    pdf2.write_bytes(pdf2.read_bytes().replace(b"/Title (inv)", b"/Title (rescan)"))
+    r2 = c.post("/documents", files={"file": ("inv2.pdf", pdf2.read_bytes(), "application/pdf")}).json()
+    assert r2["status"] == "needs_review" and "duplicate_invoice" in r2["reasons"], r2
     assert (
         c.post("/documents", files={"file": ("x.exe", b"MZ", "application/octet-stream")}).status_code == 415
     )

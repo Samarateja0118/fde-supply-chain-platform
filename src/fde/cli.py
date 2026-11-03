@@ -82,7 +82,7 @@ def cmd_docs_benchmark(args) -> None:
 def cmd_demo(args) -> None:
     from .pipeline import demo
 
-    s = demo(fetch_data(args.raw), Path(args.work), args.database_url, args.erp_url)
+    s = demo(fetch_data(args.raw), Path(args.work), args.database_url, args.erp_url, args.skip_prepare)
     p = s["plan"]
     fm = {m["model"]: m["wape_h1"] for m in p["forecast_metrics"]}
     print("\n=== demo summary ===")
@@ -101,6 +101,20 @@ def cmd_demo(args) -> None:
     )
     print(f"documents: {s['documents']}")
     print(f"results in {Path(args.work) / 'results'}")
+
+
+def cmd_prepare(args) -> None:
+    from .pipeline import prepare_drop
+
+    work = Path(args.work)
+    if (
+        not args.force
+        and (work / "customer_drop" / "erp_world.json").exists()
+        and (work / "inbox" / "manifest.json").exists()
+    ):
+        print("customer drop already prepared; use --force to regenerate")
+        return
+    print(prepare_drop(fetch_data(args.raw), work / "customer_drop", work / "inbox"))
 
 
 def cmd_serve(args) -> None:
@@ -122,7 +136,14 @@ def main(argv: list[str] | None = None) -> None:
     s.add_argument("--work", default="artifacts")
     s.add_argument("--database-url", default=None)
     s.add_argument("--erp-url", default=None, help="base URL of the ERP API; default: in-process mock")
+    s.add_argument("--skip-prepare", action="store_true", help="customer drop already generated (compose)")
     s.set_defaults(func=cmd_demo)
+
+    s = sub.add_parser("prepare", help="generate the customer's legacy exports, ERP data and document inbox")
+    s.add_argument("--raw", type=Path, default=DEFAULT_RAW)
+    s.add_argument("--work", default="artifacts")
+    s.add_argument("--force", action="store_true")
+    s.set_defaults(func=cmd_prepare)
 
     s = sub.add_parser("docs-benchmark", help="score extraction/validation/routing on generated documents")
     s.add_argument("--split", choices=["dev", "holdout"], default="holdout")

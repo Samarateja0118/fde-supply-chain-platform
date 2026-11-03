@@ -66,6 +66,15 @@ def _jsonable(ex: Extraction) -> dict:
 
 
 def process_file(engine, path: Path, md: MasterData | None = None, filename: str | None = None) -> dict:
+    digest = hashlib.sha256(path.read_bytes()).hexdigest()
+    with engine.connect() as c:
+        prior = c.execute(select(db.documents).where(db.documents.c.sha256 == digest)).mappings().first()
+    if prior is not None:  # the same file delivered twice (mail retry, re-run): never process it again
+        return {
+            "id": prior["id"],
+            **{k: prior[k] for k in ("filename", "doc_type", "sender", "doc_number", "status", "reasons")},
+            "duplicate_file": True,
+        }
     md = md or load_master_data(engine)
     profiles = _profiles(engine)
     extractor = RuleBasedExtractor(VENDOR_MASTER, dict(profiles))
@@ -77,7 +86,7 @@ def process_file(engine, path: Path, md: MasterData | None = None, filename: str
     extracted = _jsonable(ex)
     row = {
         "filename": filename or path.name,
-        "sha256": hashlib.sha256(path.read_bytes()).hexdigest(),
+        "sha256": digest,
         "doc_type": ex.doc.doc_type,
         "sender": ex.doc.sender,
         "doc_number": ex.doc.doc_number,

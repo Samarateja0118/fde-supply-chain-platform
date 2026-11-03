@@ -216,14 +216,18 @@ def process_inbox(engine, inbox: Path) -> dict:
     }
 
 
-def demo(raw_csv: Path, work: Path, engine_url: str | None, erp_url: str | None) -> dict:
+def demo(
+    raw_csv: Path, work: Path, engine_url: str | None, erp_url: str | None, skip_prepare: bool = False
+) -> dict:
     import httpx
     from fastapi.testclient import TestClient
 
     from .mock_erp.server import Faults, create_app
 
     drop, inbox, results = work / "customer_drop", work / "inbox", work / "results"
-    summary: dict = {"prepare": prepare_drop(raw_csv, drop, inbox)}
+    summary: dict = {
+        "prepare": "skipped (already prepared)" if skip_prepare else prepare_drop(raw_csv, drop, inbox)
+    }
     engine = db.get_engine(engine_url)
     if erp_url:
         client = httpx.Client(base_url=erp_url)

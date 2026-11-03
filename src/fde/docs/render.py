@@ -149,7 +149,7 @@ def to_pdf(rows: list[Row], path: Path, noise: float, rng: random.Random) -> Non
     from reportlab.lib.pagesizes import A4
     from reportlab.pdfgen import canvas
 
-    c = canvas.Canvas(str(path), pagesize=A4)
+    c = canvas.Canvas(str(path), pagesize=A4, invariant=1)  # byte-identical re-renders
     c.setTitle(path.stem)
     y = A4[1] - 50
     for row in rows:

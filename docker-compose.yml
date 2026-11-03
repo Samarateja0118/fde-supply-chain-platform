@@ -1,0 +1,63 @@
+# One command: `docker compose up --build` (or `make demo`).
+# prepare -> (erp, db) -> demo; api serves the results.  Review UI: http://localhost:8000/review
+x-app: &app
+  build: .
+  image: fde-supply-chain-platform:local
+  volumes:
+    - work:/work
+  environment:
+    DATABASE_URL: postgresql://fde:fde@db:5432/fde
+    RESULTS_DIR: /work/artifacts/results
+
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: fde
+      POSTGRES_PASSWORD: fde
+      POSTGRES_DB: fde
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U fde"]
+      interval: 2s
+      retries: 30
+
+  prepare:
+    <<: *app
+    command: ["prepare", "--raw", "/work/raw/online-retail.csv", "--work", "/work/artifacts"]
+
+  erp:
+    <<: *app
+    entrypoint: ["uvicorn", "fde.mock_erp.server:app", "--host", "0.0.0.0", "--port", "8081"]
+    environment:
+      ERP_WORLD: /work/artifacts/customer_drop/erp_world.json
+      FAULT_429_RATE: "0.15"
+      FAULT_5XX_RATE: "0.10"
+      DRIFT_AFTER_PAGE: "3"
+    depends_on:
+      prepare:
+        condition: service_completed_successfully
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8081/health')"]
+      interval: 2s
+      retries: 30
+
+  demo:
+    <<: *app
+    command: ["demo", "--raw", "/work/raw/online-retail.csv", "--work", "/work/artifacts", "--skip-prepare", "--erp-url", "http://erp:8081"]
+    depends_on:
+      db:
+        condition: service_healthy
+      erp:
+        condition: service_healthy
+
+  api:
+    <<: *app
+    command: ["serve", "--port", "8000"]
+    ports:
+      - "8000:8000"
+    depends_on:
+      db:
+        condition: service_healthy
+
+volumes:
+  work:
