@@ -1,0 +1,127 @@
+{
+ "documents": 400,
+ "seconds": 13.36,
+ "ms_per_doc": 33.4,
+ "extraction": {
+  "documents": 400,
+  "doc_type_accuracy": 1.0,
+  "header_field_accuracy": 1.0,
+  "field_accuracy": {
+   "carrier": 1.0,
+   "currency": 1.0,
+   "doc_date": 1.0,
+   "doc_number": 1.0,
+   "due_date": 1.0,
+   "po_number": 1.0,
+   "sender": 1.0,
+   "subtotal": 1.0,
+   "tax": 1.0,
+   "total": 1.0,
+   "total_weight_kg": 1.0
+  },
+  "line_precision": 1.0,
+  "line_recall": 1.0,
+  "line_f1": 1.0,
+  "document_exact_match": 1.0
+ },
+ "per_layout": {
+  "buy_cornerstore/pdf": {
+   "n": 32,
+   "header_field_accuracy": 1.0,
+   "line_f1": 1.0,
+   "document_exact_match": 1.0
+  },
+  "buy_cornerstore/txt": {
+   "n": 25,
+   "header_field_accuracy": 1.0,
+   "line_f1": 1.0,
+   "document_exact_match": 1.0
+  },
+  "buy_maison/pdf": {
+   "n": 57,
+   "header_field_accuracy": 1.0,
+   "line_f1": 1.0,
+   "document_exact_match": 1.0
+  },
+  "car_fastfreight/pdf": {
+   "n": 57,
+   "header_field_accuracy": 1.0,
+   "line_f1": 1.0,
+   "document_exact_match": 1.0
+  },
+  "car_nordsee/pdf": {
+   "n": 49,
+   "header_field_accuracy": 1.0,
+   "line_f1": 1.0,
+   "document_exact_match": 1.0
+  },
+  "car_nordsee/txt": {
+   "n": 8,
+   "header_field_accuracy": 1.0,
+   "line_f1": 1.0,
+   "document_exact_match": 1.0
+  },
+  "sup_de/pdf": {
+   "n": 57,
+   "header_field_accuracy": 1.0,
+   "line_f1": 1.0,
+   "document_exact_match": 1.0
+  },
+  "sup_uk/pdf": {
+   "n": 49,
+   "header_field_accuracy": 1.0,
+   "line_f1": 1.0,
+   "document_exact_match": 1.0
+  },
+  "sup_uk/txt": {
+   "n": 9,
+   "header_field_accuracy": 1.0,
+   "line_f1": 1.0,
+   "document_exact_match": 1.0
+  },
+  "sup_us/pdf": {
+   "n": 43,
+   "header_field_accuracy": 1.0,
+   "line_f1": 1.0,
+   "document_exact_match": 1.0
+  },
+  "sup_us/txt": {
+   "n": 14,
+   "header_field_accuracy": 1.0,
+   "line_f1": 1.0,
+   "document_exact_match": 1.0
+  }
+ },
+ "issue_recall": {
+  "carton_mismatch": "6/6",
+  "due_before_issue": "4/4",
+  "duplicate_invoice": "9/9",
+  "price_mismatch_vs_list": "9/9",
+  "price_variance": "7/7",
+  "qty_exceeds_po": "27/27",
+  "qty_not_case_multiple": "6/6",
+  "total_mismatch": "11/11",
+  "unknown_po": "21/21",
+  "unknown_sku": "6/6"
+ },
+ "issue_recall_total": 1.0,
+ "clean_docs_sent_to_review": "1/294",
+ "straight_through_rate": 0.7325,
+ "straight_through_of_eligible": 0.9966,
+ "auto_approved_with_error": "0/293",
+ "review_reasons": {
+  "qty_exceeds_po": 27,
+  "unknown_po": 21,
+  "total_mismatch": 11,
+  "price_mismatch_vs_list": 9,
+  "duplicate_invoice": 9,
+  "price_variance": 7,
+  "unknown_sku": 6,
+  "qty_not_case_multiple": 6,
+  "carton_mismatch": 6,
+  "due_before_issue": 4,
+  "low_confidence:doc_date": 2,
+  "warning": 2
+ },
+ "seed": 4
+}

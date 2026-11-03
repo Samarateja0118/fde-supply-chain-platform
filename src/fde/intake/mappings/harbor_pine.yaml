@@ -1,0 +1,52 @@
+# Source-to-canonical mapping for the (fictional) customer Harbor & Pine Home Goods.
+# One file per customer; a new customer deployment starts by copying this and filling it in during
+# the data discovery call. Everything customer-specific lives here, not in code.
+customer: harbor-pine
+
+sources:
+  sales_orders:
+    kind: csv
+    glob: "sales_orders_*.csv"
+    encoding: cp1252            # confirmed with their IT: ERP report writer runs on Windows
+    delimiter: ";"
+    header_starts_with: "Invoice Nbr"   # report preamble above the header varies by ERP patch level
+    trailer_starts_with: "TOTAL ROWS"   # trailer carries the exported row count (control total)
+    decimal: ","
+    datetime_format: "%d.%m.%Y %H:%M"
+    repeated_block_min_rows: 50  # export pagination bug re-emits whole pages; genuine duplicate lines exist and must stay
+    columns:
+      order_id: "Invoice Nbr"
+      sku: "Item"
+      description: "Item Desc"
+      qty: "Qty Shipped"
+      order_ts: "Inv Date"
+      unit_price: "Unit Price (GBP)"
+      customer_id: "Cust #"
+      country: "Ship Country"
+
+  inventory:
+    kind: fixed_width
+    glob: "inventory_*.dat"
+    encoding: cp037             # EBCDIC; if you see 'ÄÅÁ...' garbage you decoded it as latin-1
+    record_length: 68           # RECFM=FB, no newlines
+    implied_decimals:
+      unit_cost: 2
+
+  products:
+    kind: rest
+    path: /api/v1/products
+    page_size: 100
+    key: sku
+    field_aliases:              # their API renamed fields in v2 without bumping the URL
+      unit_cost: [unit_cost, unitCost]
+      list_price: [list_price, listPrice]
+      case_pack: [case_pack, casePack]
+      weight_kg: [weight_kg, weightKg]
+
+  purchase_orders:
+    kind: rest
+    path: /api/v1/purchase-orders
+    page_size: 50
+    key: po_number
+    field_aliases:
+      po_number: [po_number, poNumber]

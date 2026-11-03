@@ -1,0 +1,1786 @@
+{
+ "data": {
+  "weeks": 53,
+  "skus": 500,
+  "first_week": "2010-12-12",
+  "last_week": "2011-12-11",
+  "cleaning": {
+   "input_lines": 541909,
+   "dropped_non_product": 2995,
+   "dropped_nonpositive_price": 2485,
+   "cancellations_matched": 2953,
+   "cancellations_unmatched": 5751,
+   "clean_lines": 524772
+  }
+ },
+ "origins": {
+  "calibration": [
+   "2011-06-05",
+   "2011-08-28"
+  ],
+  "evaluation": [
+   "2011-09-04",
+   "2011-11-27"
+  ]
+ },
+ "forecast_metrics": [
+  {
+   "model": "naive",
+   "seconds": 0.0,
+   "wape_h1": 0.6919448179107968,
+   "bias_h1": -0.03869410182966037,
+   "mase_h1": 1.079196441159768,
+   "wape_h2": 0.6955802004245834,
+   "bias_h2": -0.05080224089506511,
+   "mase_h2": 1.1675982358806922,
+   "wape_rev_h1": 0.7071509171409587
+  },
+  {
+   "model": "ma4",
+   "seconds": 0.0,
+   "wape_h1": 0.5799579119658619,
+   "bias_h1": -0.08483194014146256,
+   "mase_h1": 0.9553856884892913,
+   "wape_h2": 0.5952322683348321,
+   "bias_h2": -0.09635894955446453,
+   "mase_h2": 0.9716205401418816,
+   "wape_rev_h1": 0.5939123660779246
+  },
+  {
+   "model": "ma8",
+   "seconds": 0.0,
+   "wape_h1": 0.5651160343718945,
+   "bias_h1": -0.1318410592155258,
+   "mase_h1": 0.8881749364459997,
+   "wape_h2": 0.5837972043067852,
+   "bias_h2": -0.14277596474965398,
+   "mase_h2": 0.9185263305093633,
+   "wape_rev_h1": 0.5787079438577455
+  },
+  {
+   "model": "ses",
+   "seconds": 0.01,
+   "wape_h1": 0.545448663588625,
+   "bias_h1": -0.12676617408151292,
+   "mase_h1": 0.8611309253792556,
+   "wape_h2": 0.5641633323214732,
+   "bias_h2": -0.1377650003874376,
+   "mase_h2": 0.8961055623306392,
+   "wape_rev_h1": 0.55947817320724
+  },
+  {
+   "model": "croston_sba",
+   "seconds": 0.42,
+   "wape_h1": 0.5843537344733836,
+   "bias_h1": -0.24030692560672984,
+   "mase_h1": 0.8803192418287326,
+   "wape_h2": 0.59943681325671,
+   "bias_h2": -0.24987564812188984,
+   "mase_h2": 0.9163565054914053,
+   "wape_rev_h1": 0.6069098429713164
+  },
+  {
+   "model": "lgbm",
+   "seconds": 7.67,
+   "wape_h1": 0.5347332757202381,
+   "bias_h1": -0.22153576668115194,
+   "mase_h1": 0.8633632326987211,
+   "wape_h2": 0.5507657749098522,
+   "bias_h2": -0.22163078010299858,
+   "mase_h2": 0.8738596121353034,
+   "wape_rev_h1": 0.5413763380440629
+  },
+  {
+   "model": "ens",
+   "seconds": 7.61,
+   "wape_h1": 0.5302827544329539,
+   "bias_h1": -0.17415097038133245,
+   "mase_h1": 0.8406594378752049,
+   "wape_h2": 0.5485239003068513,
+   "bias_h2": -0.17969789024521807,
+   "mase_h2": 0.8827242140653995,
+   "wape_rev_h1": 0.5389071449808172
+  }
+ ],
+ "inventory_value_at_fill_rate": {
+  "0.8": {
+   "rmse_ss_ma4": 214680.5656914881,
+   "rmse_ss_ses": 215033.5751588083,
+   "rmse_ss_lgbm": 209410.2620943481,
+   "rmse_ss_ens": 206440.72547692657,
+   "cover_ma4": 195718.54041678674,
+   "cover_ses": 183944.56786883363,
+   "cover_lgbm": 175981.95548565136,
+   "cover_ens": 169142.38797694162
+  },
+  "0.85": {
+   "rmse_ss_ma4": 290796.48382629576,
+   "rmse_ss_ses": 287198.9678695909,
+   "rmse_ss_lgbm": 288782.46356754546,
+   "rmse_ss_ens": 281269.4593651002,
+   "cover_ma4": 253114.48928699218,
+   "cover_ses": 243214.45877060224,
+   "cover_lgbm": 238160.56702499662,
+   "cover_ens": 226202.10659787763
+  },
+  "0.9": {
+   "rmse_ss_ma4": 424779.9591600187,
+   "rmse_ss_ses": 404579.64654591144,
+   "rmse_ss_lgbm": 429386.04318841407,
+   "rmse_ss_ens": 403237.74493852357,
+   "cover_ma4": 363408.27086624235,
+   "cover_ses": 347665.667303437,
+   "cover_lgbm": 357828.7734188982,
+   "cover_ens": 327236.4380085416
+  }
+ },
+ "policy_tuned_on_calibration": [
+  {
+   "policy": "rmse_ss_ma4",
+   "target_fill": 0.85,
+   "param": 0.95,
+   "fill_rate": 0.7749634921173812,
+   "cycle_service": 0.7767692307692308,
+   "avg_inventory_units": 78091.88949844298,
+   "avg_inventory_value": 186708.1335296397,
+   "orders": 4664
+  },
+  {
+   "policy": "cover_ma4",
+   "target_fill": 0.85,
+   "param": 3.5,
+   "fill_rate": 0.8459060618460279,
+   "cycle_service": 0.8189230769230769,
+   "avg_inventory_units": 108664.86538461539,
+   "avg_inventory_value": 246460.87609060106,
+   "orders": 4120
+  },
+  {
+   "policy": "rmse_ss_ma4",
+   "target_fill": 0.9,
+   "param": 1.5,
+   "fill_rate": 0.8332394703177638,
+   "cycle_service": 0.8375384615384616,
+   "avg_inventory_units": 109352.17686634607,
+   "avg_inventory_value": 260828.11148421094,
+   "orders": 4668
+  },
+  {
+   "policy": "cover_ma4",
+   "target_fill": 0.9,
+   "param": 4.5,
+   "fill_rate": 0.9059301747822529,
+   "cycle_service": 0.892,
+   "avg_inventory_units": 170445.20192307694,
+   "avg_inventory_value": 383084.5894199172,
+   "orders": 3851
+  },
+  {
+   "policy": "rmse_ss_ens",
+   "target_fill": 0.85,
+   "param": 1.15,
+   "fill_rate": 0.7634415584990168,
+   "cycle_service": 0.7735384615384615,
+   "avg_inventory_units": 69775.03783529732,
+   "avg_inventory_value": 167377.06826468636,
+   "orders": 4840
+  },
+  {
+   "policy": "cover_ens",
+   "target_fill": 0.85,
+   "param": 4.0,
+   "fill_rate": 0.8614149824458712,
+   "cycle_service": 0.8587692307692307,
+   "avg_inventory_units": 107729.73789341947,
+   "avg_inventory_value": 242592.23528636477,
+   "orders": 4187
+  },
+  {
+   "policy": "rmse_ss_ens",
+   "target_fill": 0.9,
+   "param": 1.75,
+   "fill_rate": 0.8248783972531261,
+   "cycle_service": 0.836,
+   "avg_inventory_units": 99907.25544180853,
+   "avg_inventory_value": 239268.4410559476,
+   "orders": 4840
+  },
+  {
+   "policy": "cover_ens",
+   "target_fill": 0.9,
+   "param": 5.0,
+   "fill_rate": 0.9106283544686795,
+   "cycle_service": 0.9150769230769231,
+   "avg_inventory_units": 161747.01754356117,
+   "avg_inventory_value": 362711.893318821,
+   "orders": 3920
+  }
+ ],
+ "frontiers": {
+  "rmse_ss_ma4": [
+   {
+    "name": "ma4",
+    "z": 0.25,
+    "fill_rate": 0.6441959743472463,
+    "cycle_service": 0.6336923076923077,
+    "avg_inventory_units": 43249.77288963261,
+    "avg_inventory_value": 102380.24810619201,
+    "orders": 4667
+   },
+   {
+    "name": "ma4",
+    "z": 0.5,
+    "fill_rate": 0.6991525199917555,
+    "cycle_service": 0.6936923076923077,
+    "avg_inventory_units": 54851.20540345538,
+    "avg_inventory_value": 130685.6916093374,
+    "orders": 4668
+   },
+   {
+    "name": "ma4",
+    "z": 0.75,
+    "fill_rate": 0.7453006824237178,
+    "cycle_service": 0.7432307692307693,
+    "avg_inventory_units": 67421.32903620423,
+    "avg_inventory_value": 161144.2882607741,
+    "orders": 4670
+   },
+   {
+    "name": "ma4",
+    "z": 1.0,
+    "fill_rate": 0.7815602033080085,
+    "cycle_service": 0.784,
+    "avg_inventory_units": 80827.63445852223,
+    "avg_inventory_value": 193210.7480949997,
+    "orders": 4667
+   },
+   {
+    "name": "ma4",
+    "z": 1.25,
+    "fill_rate": 0.8101705410018177,
+    "cycle_service": 0.8149230769230769,
+    "avg_inventory_units": 94858.58459987525,
+    "avg_inventory_value": 226522.32641228096,
+    "orders": 4667
+   },
+   {
+    "name": "ma4",
+    "z": 1.5,
+    "fill_rate": 0.8332394703177638,
+    "cycle_service": 0.8375384615384616,
+    "avg_inventory_units": 109352.17686634607,
+    "avg_inventory_value": 260828.11148421094,
+    "orders": 4668
+   },
+   {
+    "name": "ma4",
+    "z": 1.75,
+    "fill_rate": 0.8527970673920653,
+    "cycle_service": 0.8587692307692307,
+    "avg_inventory_units": 124154.52553466259,
+    "avg_inventory_value": 295797.73132029106,
+    "orders": 4667
+   },
+   {
+    "name": "ma4",
+    "z": 2.0,
+    "fill_rate": 0.869100484777883,
+    "cycle_service": 0.8772307692307693,
+    "avg_inventory_units": 139217.22459803135,
+    "avg_inventory_value": 331358.56664951623,
+    "orders": 4667
+   },
+   {
+    "name": "ma4",
+    "z": 2.25,
+    "fill_rate": 0.8828624291230901,
+    "cycle_service": 0.8921538461538462,
+    "avg_inventory_units": 154503.4853151912,
+    "avg_inventory_value": 367447.92533717526,
+    "orders": 4667
+   },
+   {
+    "name": "ma4",
+    "z": 2.5,
+    "fill_rate": 0.8945060362032429,
+    "cycle_service": 0.9036923076923077,
+    "avg_inventory_units": 169971.3092377839,
+    "avg_inventory_value": 403981.84874700353,
+    "orders": 4667
+   },
+   {
+    "name": "ma4",
+    "z": 2.75,
+    "fill_rate": 0.9042429970476991,
+    "cycle_service": 0.914,
+    "avg_inventory_units": 185587.11203163426,
+    "avg_inventory_value": 440842.3731737823,
+    "orders": 4668
+   },
+   {
+    "name": "ma4",
+    "z": 3.0,
+    "fill_rate": 0.9122313252432819,
+    "cycle_service": 0.9230769230769231,
+    "avg_inventory_units": 201326.48374003745,
+    "avg_inventory_value": 478028.4444328823,
+    "orders": 4668
+   },
+   {
+    "name": "ma4",
+    "z": 3.25,
+    "fill_rate": 0.9191427284587117,
+    "cycle_service": 0.9292307692307692,
+    "avg_inventory_units": 217153.27344910114,
+    "avg_inventory_value": 515456.67208408186,
+    "orders": 4668
+   },
+   {
+    "name": "ma4",
+    "z": 3.5,
+    "fill_rate": 0.9254396809477599,
+    "cycle_service": 0.9358461538461539,
+    "avg_inventory_units": 233045.88912179606,
+    "avg_inventory_value": 553052.3837903014,
+    "orders": 4668
+   },
+   {
+    "name": "ma4",
+    "z": 3.75,
+    "fill_rate": 0.9310987101627198,
+    "cycle_service": 0.9413846153846154,
+    "avg_inventory_units": 249000.74654494732,
+    "avg_inventory_value": 590836.6057476335,
+    "orders": 4667
+   },
+   {
+    "name": "ma4",
+    "z": 4.0,
+    "fill_rate": 0.9360542220289055,
+    "cycle_service": 0.9461538461538461,
+    "avg_inventory_units": 265011.36532199936,
+    "avg_inventory_value": 628746.2313613205,
+    "orders": 4671
+   }
+  ],
+  "rmse_ss_ses": [
+   {
+    "name": "ses",
+    "z": 0.25,
+    "fill_rate": 0.6238885433479302,
+    "cycle_service": 0.6167692307692307,
+    "avg_inventory_units": 36321.95256187832,
+    "avg_inventory_value": 87870.52198037192,
+    "orders": 5026
+   },
+   {
+    "name": "ses",
+    "z": 0.5,
+    "fill_rate": 0.6776472046792447,
+    "cycle_service": 0.6792307692307693,
+    "avg_inventory_units": 46813.90731220245,
+    "avg_inventory_value": 113889.02145706561,
+    "orders": 5026
+   },
+   {
+    "name": "ses",
+    "z": 0.75,
+    "fill_rate": 0.7218588949204184,
+    "cycle_service": 0.726,
+    "avg_inventory_units": 58165.24171773048,
+    "avg_inventory_value": 141755.41809201377,
+    "orders": 5026
+   },
+   {
+    "name": "ses",
+    "z": 1.0,
+    "fill_rate": 0.7581084445951582,
+    "cycle_service": 0.7636923076923077,
+    "avg_inventory_units": 70228.27894311374,
+    "avg_inventory_value": 171105.89751514333,
+    "orders": 5026
+   },
+   {
+    "name": "ses",
+    "z": 1.25,
+    "fill_rate": 0.7888951854519145,
+    "cycle_service": 0.7967692307692308,
+    "avg_inventory_units": 82789.8212759959,
+    "avg_inventory_value": 201531.5173387503,
+    "orders": 5026
+   },
+   {
+    "name": "ses",
+    "z": 1.5,
+    "fill_rate": 0.814699527542201,
+    "cycle_service": 0.8209230769230769,
+    "avg_inventory_units": 95782.44030572953,
+    "avg_inventory_value": 232906.35186686675,
+    "orders": 5026
+   },
+   {
+    "name": "ses",
+    "z": 1.75,
+    "fill_rate": 0.836967269136996,
+    "cycle_service": 0.8436923076923077,
+    "avg_inventory_units": 109079.08680900781,
+    "avg_inventory_value": 264981.68481633643,
+    "orders": 5026
+   },
+   {
+    "name": "ses",
+    "z": 2.0,
+    "fill_rate": 0.8561256728862395,
+    "cycle_service": 0.8623076923076923,
+    "avg_inventory_units": 122651.92601934262,
+    "avg_inventory_value": 297641.58422036405,
+    "orders": 5026
+   },
+   {
+    "name": "ses",
+    "z": 2.25,
+    "fill_rate": 0.8720997885967077,
+    "cycle_service": 0.8804615384615384,
+    "avg_inventory_units": 136478.4204829707,
+    "avg_inventory_value": 330869.975710271,
+    "orders": 5026
+   },
+   {
+    "name": "ses",
+    "z": 2.5,
+    "fill_rate": 0.8861667753538548,
+    "cycle_service": 0.894,
+    "avg_inventory_units": 150484.64950200185,
+    "avg_inventory_value": 364482.7095415431,
+    "orders": 5026
+   },
+   {
+    "name": "ses",
+    "z": 2.75,
+    "fill_rate": 0.8981272547161385,
+    "cycle_service": 0.9063076923076923,
+    "avg_inventory_units": 164664.9145855093,
+    "avg_inventory_value": 398466.96103094524,
+    "orders": 5026
+   },
+   {
+    "name": "ses",
+    "z": 3.0,
+    "fill_rate": 0.9086343751749999,
+    "cycle_service": 0.9181538461538461,
+    "avg_inventory_units": 178965.11535825563,
+    "avg_inventory_value": 432762.4541694754,
+    "orders": 5026
+   },
+   {
+    "name": "ses",
+    "z": 3.25,
+    "fill_rate": 0.9179714309738687,
+    "cycle_service": 0.9266153846153846,
+    "avg_inventory_units": 193365.65162567783,
+    "avg_inventory_value": 467356.8650485101,
+    "orders": 5026
+   },
+   {
+    "name": "ses",
+    "z": 3.5,
+    "fill_rate": 0.9256405691327022,
+    "cycle_service": 0.9333846153846154,
+    "avg_inventory_units": 207907.7782086581,
+    "avg_inventory_value": 502212.4129448678,
+    "orders": 5026
+   },
+   {
+    "name": "ses",
+    "z": 3.75,
+    "fill_rate": 0.9320476801702953,
+    "cycle_service": 0.9395384615384615,
+    "avg_inventory_units": 222541.96732847657,
+    "avg_inventory_value": 537275.3214080086,
+    "orders": 5026
+   },
+   {
+    "name": "ses",
+    "z": 4.0,
+    "fill_rate": 0.937816519596699,
+    "cycle_service": 0.9447692307692308,
+    "avg_inventory_units": 237229.72222761397,
+    "avg_inventory_value": 572452.5867891466,
+    "orders": 5026
+   }
+  ],
+  "rmse_ss_lgbm": [
+   {
+    "name": "lgbm",
+    "z": 0.25,
+    "fill_rate": 0.5836542682144661,
+    "cycle_service": 0.5823076923076923,
+    "avg_inventory_units": 27826.787653035393,
+    "avg_inventory_value": 64304.518110681165,
+    "orders": 4654
+   },
+   {
+    "name": "lgbm",
+    "z": 0.5,
+    "fill_rate": 0.6449674987317846,
+    "cycle_service": 0.6527692307692308,
+    "avg_inventory_units": 37664.239975062315,
+    "avg_inventory_value": 88177.66349856876,
+    "orders": 4654
+   },
+   {
+    "name": "lgbm",
+    "z": 0.75,
+    "fill_rate": 0.6933109779527858,
+    "cycle_service": 0.7090769230769232,
+    "avg_inventory_units": 48687.90166557988,
+    "avg_inventory_value": 114822.72768427237,
+    "orders": 4654
+   },
+   {
+    "name": "lgbm",
+    "z": 1.0,
+    "fill_rate": 0.7336133555012727,
+    "cycle_service": 0.7475384615384615,
+    "avg_inventory_units": 60445.910976587365,
+    "avg_inventory_value": 143094.1026793615,
+    "orders": 4654
+   },
+   {
+    "name": "lgbm",
+    "z": 1.25,
+    "fill_rate": 0.7671671636892048,
+    "cycle_service": 0.7804615384615384,
+    "avg_inventory_units": 72805.18626562507,
+    "avg_inventory_value": 172518.70600914254,
+    "orders": 4654
+   },
+   {
+    "name": "lgbm",
+    "z": 1.5,
+    "fill_rate": 0.7951951421991724,
+    "cycle_service": 0.8124615384615385,
+    "avg_inventory_units": 85650.78422354262,
+    "avg_inventory_value": 202933.7508564371,
+    "orders": 4654
+   },
+   {
+    "name": "lgbm",
+    "z": 1.75,
+    "fill_rate": 0.8184281744694479,
+    "cycle_service": 0.8361538461538461,
+    "avg_inventory_units": 98911.3989014097,
+    "avg_inventory_value": 234249.76494602574,
+    "orders": 4654
+   },
+   {
+    "name": "lgbm",
+    "z": 2.0,
+    "fill_rate": 0.8383323644643844,
+    "cycle_service": 0.8592307692307692,
+    "avg_inventory_units": 112481.43816646807,
+    "avg_inventory_value": 266233.704040459,
+    "orders": 4654
+   },
+   {
+    "name": "lgbm",
+    "z": 2.25,
+    "fill_rate": 0.8552002712591075,
+    "cycle_service": 0.8749230769230769,
+    "avg_inventory_units": 126309.46150248426,
+    "avg_inventory_value": 298832.4574792766,
+    "orders": 4654
+   },
+   {
+    "name": "lgbm",
+    "z": 2.5,
+    "fill_rate": 0.869614064102087,
+    "cycle_service": 0.8883076923076924,
+    "avg_inventory_units": 140330.58501202014,
+    "avg_inventory_value": 331866.1504799541,
+    "orders": 4654
+   },
+   {
+    "name": "lgbm",
+    "z": 2.75,
+    "fill_rate": 0.8820175292947858,
+    "cycle_service": 0.902,
+    "avg_inventory_units": 154532.27399338936,
+    "avg_inventory_value": 365262.31711498153,
+    "orders": 4654
+   },
+   {
+    "name": "lgbm",
+    "z": 3.0,
+    "fill_rate": 0.8919434078161564,
+    "cycle_service": 0.9107692307692308,
+    "avg_inventory_units": 168931.9598316013,
+    "avg_inventory_value": 399067.6956452042,
+    "orders": 4654
+   },
+   {
+    "name": "lgbm",
+    "z": 3.25,
+    "fill_rate": 0.9009771529511671,
+    "cycle_service": 0.9186153846153846,
+    "avg_inventory_units": 183405.5618456864,
+    "avg_inventory_value": 433063.2384715223,
+    "orders": 4654
+   },
+   {
+    "name": "lgbm",
+    "z": 3.5,
+    "fill_rate": 0.9089722103758979,
+    "cycle_service": 0.924923076923077,
+    "avg_inventory_units": 197962.01985749835,
+    "avg_inventory_value": 467241.38641462626,
+    "orders": 4654
+   },
+   {
+    "name": "lgbm",
+    "z": 3.75,
+    "fill_rate": 0.9162765146018926,
+    "cycle_service": 0.9326153846153846,
+    "avg_inventory_units": 212588.37050606695,
+    "avg_inventory_value": 501583.4829767209,
+    "orders": 4654
+   },
+   {
+    "name": "lgbm",
+    "z": 4.0,
+    "fill_rate": 0.9228622674011305,
+    "cycle_service": 0.938,
+    "avg_inventory_units": 227280.97565795647,
+    "avg_inventory_value": 536126.5482213425,
+    "orders": 4654
+   }
+  ],
+  "rmse_ss_ens": [
+   {
+    "name": "ens",
+    "z": 0.25,
+    "fill_rate": 0.6050615319277971,
+    "cycle_service": 0.6,
+    "avg_inventory_units": 30523.877649411552,
+    "avg_inventory_value": 72187.23219991612,
+    "orders": 4840
+   },
+   {
+    "name": "ens",
+    "z": 0.5,
+    "fill_rate": 0.6606174648182891,
+    "cycle_service": 0.6643076923076923,
+    "avg_inventory_units": 40374.22827270323,
+    "avg_inventory_value": 96262.4132573035,
+    "orders": 4840
+   },
+   {
+    "name": "ens",
+    "z": 0.75,
+    "fill_rate": 0.70620213390125,
+    "cycle_service": 0.7127692307692308,
+    "avg_inventory_units": 51148.838837081596,
+    "avg_inventory_value": 122489.42430942635,
+    "orders": 4840
+   },
+   {
+    "name": "ens",
+    "z": 1.0,
+    "fill_rate": 0.7440350750895809,
+    "cycle_service": 0.7530769230769231,
+    "avg_inventory_units": 62608.324211833446,
+    "avg_inventory_value": 150185.90097252728,
+    "orders": 4840
+   },
+   {
+    "name": "ens",
+    "z": 1.25,
+    "fill_rate": 0.7754487246575218,
+    "cycle_service": 0.784,
+    "avg_inventory_units": 74646.65617125682,
+    "avg_inventory_value": 179033.02881217859,
+    "orders": 4840
+   },
+   {
+    "name": "ens",
+    "z": 1.5,
+    "fill_rate": 0.8020864977995822,
+    "cycle_service": 0.8141538461538461,
+    "avg_inventory_units": 87106.03518481125,
+    "avg_inventory_value": 208769.97713432088,
+    "orders": 4840
+   },
+   {
+    "name": "ens",
+    "z": 1.75,
+    "fill_rate": 0.8248783972531261,
+    "cycle_service": 0.836,
+    "avg_inventory_units": 99907.25544180853,
+    "avg_inventory_value": 239268.4410559476,
+    "orders": 4840
+   },
+   {
+    "name": "ens",
+    "z": 2.0,
+    "fill_rate": 0.8442010255404351,
+    "cycle_service": 0.856,
+    "avg_inventory_units": 113011.35558581023,
+    "avg_inventory_value": 270405.65936962195,
+    "orders": 4840
+   },
+   {
+    "name": "ens",
+    "z": 2.25,
+    "fill_rate": 0.86111516887415,
+    "cycle_service": 0.8721538461538462,
+    "avg_inventory_units": 126341.93059354795,
+    "avg_inventory_value": 302092.6191163144,
+    "orders": 4840
+   },
+   {
+    "name": "ens",
+    "z": 2.5,
+    "fill_rate": 0.8754943379215238,
+    "cycle_service": 0.8876923076923077,
+    "avg_inventory_units": 139871.5704410949,
+    "avg_inventory_value": 334208.14680775255,
+    "orders": 4840
+   },
+   {
+    "name": "ens",
+    "z": 2.75,
+    "fill_rate": 0.8880373117200451,
+    "cycle_service": 0.9003076923076923,
+    "avg_inventory_units": 153554.6330189025,
+    "avg_inventory_value": 366658.1023343842,
+    "orders": 4840
+   },
+   {
+    "name": "ens",
+    "z": 3.0,
+    "fill_rate": 0.8989570005346005,
+    "cycle_service": 0.9118461538461539,
+    "avg_inventory_units": 167370.63930777102,
+    "avg_inventory_value": 399409.8096981538,
+    "orders": 4840
+   },
+   {
+    "name": "ens",
+    "z": 3.25,
+    "fill_rate": 0.9079597120482138,
+    "cycle_service": 0.9206153846153846,
+    "avg_inventory_units": 181343.82007997343,
+    "avg_inventory_value": 432450.8589077444,
+    "orders": 4840
+   },
+   {
+    "name": "ens",
+    "z": 3.5,
+    "fill_rate": 0.9158951891593442,
+    "cycle_service": 0.928923076923077,
+    "avg_inventory_units": 195412.45476822183,
+    "avg_inventory_value": 465693.5060451551,
+    "orders": 4840
+   },
+   {
+    "name": "ens",
+    "z": 3.75,
+    "fill_rate": 0.9229308772291778,
+    "cycle_service": 0.9353846153846154,
+    "avg_inventory_units": 209557.75776720812,
+    "avg_inventory_value": 499171.1848595896,
+    "orders": 4840
+   },
+   {
+    "name": "ens",
+    "z": 4.0,
+    "fill_rate": 0.9291400504592724,
+    "cycle_service": 0.9407692307692308,
+    "avg_inventory_units": 223769.07667099533,
+    "avg_inventory_value": 532838.3930549913,
+    "orders": 4840
+   }
+  ],
+  "cover_ma4": [
+   {
+    "name": "cover_ma4",
+    "z": 1.0,
+    "fill_rate": 0.21328929677909628,
+    "cycle_service": 0.23923076923076925,
+    "avg_inventory_units": 6251.442307692308,
+    "avg_inventory_value": 15405.832816188056,
+    "orders": 5157
+   },
+   {
+    "name": "cover_ma4",
+    "z": 1.25,
+    "fill_rate": 0.30839868182615304,
+    "cycle_service": 0.32153846153846155,
+    "avg_inventory_units": 10778.682692307691,
+    "avg_inventory_value": 26063.822594017533,
+    "orders": 5027
+   },
+   {
+    "name": "cover_ma4",
+    "z": 1.5,
+    "fill_rate": 0.4048467001812124,
+    "cycle_service": 0.40184615384615385,
+    "avg_inventory_units": 16749.596153846152,
+    "avg_inventory_value": 39935.613191390185,
+    "orders": 4907
+   },
+   {
+    "name": "cover_ma4",
+    "z": 1.75,
+    "fill_rate": 0.49506422809376277,
+    "cycle_service": 0.47861538461538466,
+    "avg_inventory_units": 24272.408653846152,
+    "avg_inventory_value": 57234.086963151334,
+    "orders": 4798
+   },
+   {
+    "name": "cover_ma4",
+    "z": 2.0,
+    "fill_rate": 0.5747810837668791,
+    "cycle_service": 0.5518461538461539,
+    "avg_inventory_units": 33109.46153846154,
+    "avg_inventory_value": 77459.95253505452,
+    "orders": 4667
+   },
+   {
+    "name": "cover_ma4",
+    "z": 2.25,
+    "fill_rate": 0.6436440492196177,
+    "cycle_service": 0.6161538461538462,
+    "avg_inventory_units": 43313.42307692308,
+    "avg_inventory_value": 100900.36855305918,
+    "orders": 4571
+   },
+   {
+    "name": "cover_ma4",
+    "z": 2.5,
+    "fill_rate": 0.6999118781785234,
+    "cycle_service": 0.6712307692307693,
+    "avg_inventory_units": 54719.91346153846,
+    "avg_inventory_value": 126578.5807812116,
+    "orders": 4470
+   },
+   {
+    "name": "cover_ma4",
+    "z": 2.75,
+    "fill_rate": 0.7477363067750044,
+    "cycle_service": 0.7193846153846154,
+    "avg_inventory_units": 67167.40384615384,
+    "avg_inventory_value": 154481.3806939611,
+    "orders": 4364
+   },
+   {
+    "name": "cover_ma4",
+    "z": 3.0,
+    "fill_rate": 0.7874744256737009,
+    "cycle_service": 0.758,
+    "avg_inventory_units": 80348.28846153847,
+    "avg_inventory_value": 183680.97508244024,
+    "orders": 4266
+   },
+   {
+    "name": "cover_ma4",
+    "z": 3.25,
+    "fill_rate": 0.8196475127140936,
+    "cycle_service": 0.7895384615384615,
+    "avg_inventory_units": 94255.28846153847,
+    "avg_inventory_value": 214600.56624587174,
+    "orders": 4191
+   },
+   {
+    "name": "cover_ma4",
+    "z": 3.5,
+    "fill_rate": 0.8459060618460279,
+    "cycle_service": 0.8189230769230769,
+    "avg_inventory_units": 108664.86538461539,
+    "avg_inventory_value": 246460.87609060106,
+    "orders": 4120
+   },
+   {
+    "name": "cover_ma4",
+    "z": 3.75,
+    "fill_rate": 0.8662303443035015,
+    "cycle_service": 0.8407692307692307,
+    "avg_inventory_units": 123603.78365384616,
+    "avg_inventory_value": 279492.6193364101,
+    "orders": 4043
+   },
+   {
+    "name": "cover_ma4",
+    "z": 4.0,
+    "fill_rate": 0.8822973051967031,
+    "cycle_service": 0.8630769230769231,
+    "avg_inventory_units": 138751.0,
+    "avg_inventory_value": 312720.9705226891,
+    "orders": 3975
+   },
+   {
+    "name": "cover_ma4",
+    "z": 4.25,
+    "fill_rate": 0.8953860261881101,
+    "cycle_service": 0.8801538461538462,
+    "avg_inventory_units": 154564.8125,
+    "avg_inventory_value": 348099.10682730837,
+    "orders": 3905
+   },
+   {
+    "name": "cover_ma4",
+    "z": 4.5,
+    "fill_rate": 0.9059301747822529,
+    "cycle_service": 0.892,
+    "avg_inventory_units": 170445.20192307694,
+    "avg_inventory_value": 383084.5894199172,
+    "orders": 3851
+   },
+   {
+    "name": "cover_ma4",
+    "z": 4.75,
+    "fill_rate": 0.9148912725784767,
+    "cycle_service": 0.9056923076923077,
+    "avg_inventory_units": 186546.66826923078,
+    "avg_inventory_value": 418638.8887969463,
+    "orders": 3783
+   },
+   {
+    "name": "cover_ma4",
+    "z": 5.0,
+    "fill_rate": 0.9220631905068101,
+    "cycle_service": 0.9153846153846154,
+    "avg_inventory_units": 202798.36538461538,
+    "avg_inventory_value": 454502.88032806996,
+    "orders": 3727
+   },
+   {
+    "name": "cover_ma4",
+    "z": 5.25,
+    "fill_rate": 0.9281870725434033,
+    "cycle_service": 0.9233846153846154,
+    "avg_inventory_units": 219248.35096153847,
+    "avg_inventory_value": 491012.9041359537,
+    "orders": 3659
+   },
+   {
+    "name": "cover_ma4",
+    "z": 5.5,
+    "fill_rate": 0.9334924299994154,
+    "cycle_service": 0.9299999999999999,
+    "avg_inventory_units": 235774.16346153847,
+    "avg_inventory_value": 527712.2254856569,
+    "orders": 3600
+   },
+   {
+    "name": "cover_ma4",
+    "z": 5.75,
+    "fill_rate": 0.9381101303559947,
+    "cycle_service": 0.9363076923076923,
+    "avg_inventory_units": 252416.72596153847,
+    "avg_inventory_value": 564505.4606829893,
+    "orders": 3567
+   },
+   {
+    "name": "cover_ma4",
+    "z": 6.0,
+    "fill_rate": 0.9424755947857603,
+    "cycle_service": 0.9413846153846154,
+    "avg_inventory_units": 269055.8461538461,
+    "avg_inventory_value": 601234.8231633321,
+    "orders": 3509
+   },
+   {
+    "name": "cover_ma4",
+    "z": 6.25,
+    "fill_rate": 0.946432381481265,
+    "cycle_service": 0.9453846153846154,
+    "avg_inventory_units": 285945.82692307694,
+    "avg_inventory_value": 638932.7559012562,
+    "orders": 3440
+   },
+   {
+    "name": "cover_ma4",
+    "z": 6.5,
+    "fill_rate": 0.9500859297363652,
+    "cycle_service": 0.9492307692307692,
+    "avg_inventory_units": 302814.1346153846,
+    "avg_inventory_value": 676271.2399175228,
+    "orders": 3396
+   },
+   {
+    "name": "cover_ma4",
+    "z": 6.75,
+    "fill_rate": 0.953346437130999,
+    "cycle_service": 0.9535384615384616,
+    "avg_inventory_units": 319790.79326923075,
+    "avg_inventory_value": 714081.2559794183,
+    "orders": 3346
+   },
+   {
+    "name": "cover_ma4",
+    "z": 7.0,
+    "fill_rate": 0.9561387151458467,
+    "cycle_service": 0.9553846153846154,
+    "avg_inventory_units": 336789.07692307694,
+    "avg_inventory_value": 751688.0325964538,
+    "orders": 3308
+   }
+  ],
+  "cover_ses": [
+   {
+    "name": "cover_ses",
+    "z": 1.0,
+    "fill_rate": 0.19215170459087696,
+    "cycle_service": 0.22599999999999998,
+    "avg_inventory_units": 4771.676901305025,
+    "avg_inventory_value": 12141.056990838348,
+    "orders": 5372
+   },
+   {
+    "name": "cover_ses",
+    "z": 1.25,
+    "fill_rate": 0.28761287437005884,
+    "cycle_service": 0.3081538461538461,
+    "avg_inventory_units": 8251.969500304385,
+    "avg_inventory_value": 20649.50056889251,
+    "orders": 5283
+   },
+   {
+    "name": "cover_ses",
+    "z": 1.5,
+    "fill_rate": 0.38458514478816397,
+    "cycle_service": 0.38676923076923075,
+    "avg_inventory_units": 13135.35871181436,
+    "avg_inventory_value": 32244.94876500374,
+    "orders": 5185
+   },
+   {
+    "name": "cover_ses",
+    "z": 1.75,
+    "fill_rate": 0.47532314001487025,
+    "cycle_service": 0.4644615384615385,
+    "avg_inventory_units": 19457.96866783625,
+    "avg_inventory_value": 47019.648098252066,
+    "orders": 5115
+   },
+   {
+    "name": "cover_ses",
+    "z": 2.0,
+    "fill_rate": 0.5566655377398075,
+    "cycle_service": 0.5383076923076924,
+    "avg_inventory_units": 27106.654649117987,
+    "avg_inventory_value": 64852.22557559396,
+    "orders": 5026
+   },
+   {
+    "name": "cover_ses",
+    "z": 2.25,
+    "fill_rate": 0.6268821638421995,
+    "cycle_service": 0.6036923076923078,
+    "avg_inventory_units": 36004.74148180809,
+    "avg_inventory_value": 85442.42701049366,
+    "orders": 4938
+   },
+   {
+    "name": "cover_ses",
+    "z": 2.5,
+    "fill_rate": 0.6850130536450099,
+    "cycle_service": 0.6639999999999999,
+    "avg_inventory_units": 46121.141493283714,
+    "avg_inventory_value": 108483.87907515593,
+    "orders": 4869
+   },
+   {
+    "name": "cover_ses",
+    "z": 2.75,
+    "fill_rate": 0.7323707960988227,
+    "cycle_service": 0.713076923076923,
+    "avg_inventory_units": 57212.84838589875,
+    "avg_inventory_value": 133511.59167551546,
+    "orders": 4789
+   },
+   {
+    "name": "cover_ses",
+    "z": 3.0,
+    "fill_rate": 0.7723946708005948,
+    "cycle_service": 0.7546153846153846,
+    "avg_inventory_units": 69017.59672278284,
+    "avg_inventory_value": 160098.9981514618,
+    "orders": 4729
+   },
+   {
+    "name": "cover_ses",
+    "z": 3.25,
+    "fill_rate": 0.8050103858241092,
+    "cycle_service": 0.7898461538461539,
+    "avg_inventory_units": 81487.36820026374,
+    "avg_inventory_value": 188272.55481717622,
+    "orders": 4658
+   },
+   {
+    "name": "cover_ses",
+    "z": 3.5,
+    "fill_rate": 0.8314409073889631,
+    "cycle_service": 0.8198461538461539,
+    "avg_inventory_units": 94509.98500848762,
+    "avg_inventory_value": 217638.78742251385,
+    "orders": 4600
+   },
+   {
+    "name": "cover_ses",
+    "z": 3.75,
+    "fill_rate": 0.8534379617624295,
+    "cycle_service": 0.842,
+    "avg_inventory_units": 107939.51947050424,
+    "avg_inventory_value": 247952.20010235798,
+    "orders": 4541
+   },
+   {
+    "name": "cover_ses",
+    "z": 4.0,
+    "fill_rate": 0.871578691099439,
+    "cycle_service": 0.8627692307692307,
+    "avg_inventory_units": 121722.46248823624,
+    "avg_inventory_value": 279159.42594057106,
+    "orders": 4473
+   },
+   {
+    "name": "cover_ses",
+    "z": 4.25,
+    "fill_rate": 0.886453828332004,
+    "cycle_service": 0.8807692307692307,
+    "avg_inventory_units": 135827.59931727475,
+    "avg_inventory_value": 311080.1885361255,
+    "orders": 4423
+   },
+   {
+    "name": "cover_ses",
+    "z": 4.5,
+    "fill_rate": 0.8987185194774636,
+    "cycle_service": 0.8956923076923077,
+    "avg_inventory_units": 150193.32028825325,
+    "avg_inventory_value": 343556.00530110474,
+    "orders": 4368
+   },
+   {
+    "name": "cover_ses",
+    "z": 4.75,
+    "fill_rate": 0.908986495860808,
+    "cycle_service": 0.9078461538461539,
+    "avg_inventory_units": 164770.09182428333,
+    "avg_inventory_value": 376485.0367154523,
+    "orders": 4323
+   },
+   {
+    "name": "cover_ses",
+    "z": 5.0,
+    "fill_rate": 0.917305991000079,
+    "cycle_service": 0.9193846153846154,
+    "avg_inventory_units": 179520.92929028798,
+    "avg_inventory_value": 409777.0437033171,
+    "orders": 4276
+   },
+   {
+    "name": "cover_ses",
+    "z": 5.25,
+    "fill_rate": 0.9243255846084947,
+    "cycle_service": 0.9270769230769231,
+    "avg_inventory_units": 194410.2096411814,
+    "avg_inventory_value": 443360.1754602418,
+    "orders": 4220
+   },
+   {
+    "name": "cover_ses",
+    "z": 5.5,
+    "fill_rate": 0.9303246989444918,
+    "cycle_service": 0.9339999999999999,
+    "avg_inventory_units": 209410.48175506011,
+    "avg_inventory_value": 477233.0705632727,
+    "orders": 4174
+   },
+   {
+    "name": "cover_ses",
+    "z": 5.75,
+    "fill_rate": 0.9354637208678666,
+    "cycle_service": 0.938923076923077,
+    "avg_inventory_units": 224505.6463380513,
+    "avg_inventory_value": 511330.2529222807,
+    "orders": 4129
+   },
+   {
+    "name": "cover_ses",
+    "z": 6.0,
+    "fill_rate": 0.9401050808486433,
+    "cycle_service": 0.9443076923076923,
+    "avg_inventory_units": 239679.68089086702,
+    "avg_inventory_value": 545631.3632578745,
+    "orders": 4084
+   },
+   {
+    "name": "cover_ses",
+    "z": 6.25,
+    "fill_rate": 0.9443535877949071,
+    "cycle_service": 0.9481538461538461,
+    "avg_inventory_units": 254921.83417732368,
+    "avg_inventory_value": 580111.9137688963,
+    "orders": 4044
+   },
+   {
+    "name": "cover_ses",
+    "z": 6.5,
+    "fill_rate": 0.9482787311418295,
+    "cycle_service": 0.9524615384615385,
+    "avg_inventory_units": 270223.44653853937,
+    "avg_inventory_value": 614744.8687221642,
+    "orders": 3999
+   },
+   {
+    "name": "cover_ses",
+    "z": 6.75,
+    "fill_rate": 0.9521618238833598,
+    "cycle_service": 0.955076923076923,
+    "avg_inventory_units": 285578.1631585329,
+    "avg_inventory_value": 649534.5719567082,
+    "orders": 3962
+   },
+   {
+    "name": "cover_ses",
+    "z": 7.0,
+    "fill_rate": 0.9556991090142419,
+    "cycle_service": 0.9596923076923077,
+    "avg_inventory_units": 300982.9537005771,
+    "avg_inventory_value": 684388.9295895045,
+    "orders": 3913
+   }
+  ],
+  "cover_lgbm": [
+   {
+    "name": "cover_lgbm",
+    "z": 1.0,
+    "fill_rate": 0.15854705615227538,
+    "cycle_service": 0.17261538461538461,
+    "avg_inventory_units": 2474.196202478097,
+    "avg_inventory_value": 5830.956015171683,
+    "orders": 5171
+   },
+   {
+    "name": "cover_lgbm",
+    "z": 1.25,
+    "fill_rate": 0.24489750684419548,
+    "cycle_service": 0.2504615384615385,
+    "avg_inventory_units": 4763.01061112263,
+    "avg_inventory_value": 11017.883952692235,
+    "orders": 5053
+   },
+   {
+    "name": "cover_lgbm",
+    "z": 1.5,
+    "fill_rate": 0.33470157776755977,
+    "cycle_service": 0.3304615384615385,
+    "avg_inventory_units": 8209.418911293393,
+    "avg_inventory_value": 18848.73237438648,
+    "orders": 4911
+   },
+   {
+    "name": "cover_lgbm",
+    "z": 1.75,
+    "fill_rate": 0.42234610680714746,
+    "cycle_service": 0.4092307692307692,
+    "avg_inventory_units": 12915.408499969282,
+    "avg_inventory_value": 29369.908982587887,
+    "orders": 4783
+   },
+   {
+    "name": "cover_lgbm",
+    "z": 2.0,
+    "fill_rate": 0.5022433504963117,
+    "cycle_service": 0.4890769230769231,
+    "avg_inventory_units": 18998.64626948475,
+    "avg_inventory_value": 43001.673182321996,
+    "orders": 4682
+   },
+   {
+    "name": "cover_lgbm",
+    "z": 2.25,
+    "fill_rate": 0.5719680001863937,
+    "cycle_service": 0.5573846153846154,
+    "avg_inventory_units": 26271.51799752076,
+    "avg_inventory_value": 59183.73002065594,
+    "orders": 4583
+   },
+   {
+    "name": "cover_lgbm",
+    "z": 2.5,
+    "fill_rate": 0.6328172597781998,
+    "cycle_service": 0.6155384615384616,
+    "avg_inventory_units": 34616.583765125826,
+    "avg_inventory_value": 77694.88559350997,
+    "orders": 4461
+   },
+   {
+    "name": "cover_lgbm",
+    "z": 2.75,
+    "fill_rate": 0.6846844730626062,
+    "cycle_service": 0.668923076923077,
+    "avg_inventory_units": 43904.434812693056,
+    "avg_inventory_value": 98396.17739898011,
+    "orders": 4348
+   },
+   {
+    "name": "cover_lgbm",
+    "z": 3.0,
+    "fill_rate": 0.7283080744528788,
+    "cycle_service": 0.712,
+    "avg_inventory_units": 54044.676660933685,
+    "avg_inventory_value": 120654.35388846422,
+    "orders": 4250
+   },
+   {
+    "name": "cover_lgbm",
+    "z": 3.25,
+    "fill_rate": 0.7640358046250074,
+    "cycle_service": 0.7536923076923077,
+    "avg_inventory_units": 64925.538460214884,
+    "avg_inventory_value": 144503.44103337982,
+    "orders": 4162
+   },
+   {
+    "name": "cover_lgbm",
+    "z": 3.5,
+    "fill_rate": 0.7939591957389414,
+    "cycle_service": 0.7896923076923077,
+    "avg_inventory_units": 76411.6449143269,
+    "avg_inventory_value": 169676.737696767,
+    "orders": 4090
+   },
+   {
+    "name": "cover_lgbm",
+    "z": 3.75,
+    "fill_rate": 0.8191437177179762,
+    "cycle_service": 0.8140000000000001,
+    "avg_inventory_units": 88391.93363272745,
+    "avg_inventory_value": 195963.61757638925,
+    "orders": 4017
+   },
+   {
+    "name": "cover_lgbm",
+    "z": 4.0,
+    "fill_rate": 0.8403903313255268,
+    "cycle_service": 0.8363076923076923,
+    "avg_inventory_units": 100777.57747559146,
+    "avg_inventory_value": 223240.31530033177,
+    "orders": 3937
+   },
+   {
+    "name": "cover_lgbm",
+    "z": 4.25,
+    "fill_rate": 0.8582858417642938,
+    "cycle_service": 0.8566153846153846,
+    "avg_inventory_units": 113491.38685324775,
+    "avg_inventory_value": 251025.40649676768,
+    "orders": 3860
+   },
+   {
+    "name": "cover_lgbm",
+    "z": 4.5,
+    "fill_rate": 0.8730295259932425,
+    "cycle_service": 0.8750769230769231,
+    "avg_inventory_units": 126513.88628380516,
+    "avg_inventory_value": 279576.5875352505,
+    "orders": 3799
+   },
+   {
+    "name": "cover_lgbm",
+    "z": 4.75,
+    "fill_rate": 0.8844204871962413,
+    "cycle_service": 0.8866153846153846,
+    "avg_inventory_units": 139864.19014775433,
+    "avg_inventory_value": 308752.6286698632,
+    "orders": 3743
+   },
+   {
+    "name": "cover_lgbm",
+    "z": 5.0,
+    "fill_rate": 0.8945443520412385,
+    "cycle_service": 0.8970769230769231,
+    "avg_inventory_units": 153415.03216314566,
+    "avg_inventory_value": 338484.8498751248,
+    "orders": 3679
+   },
+   {
+    "name": "cover_lgbm",
+    "z": 5.25,
+    "fill_rate": 0.9030379311558756,
+    "cycle_service": 0.9055384615384615,
+    "avg_inventory_units": 167167.33318524502,
+    "avg_inventory_value": 368600.2726898748,
+    "orders": 3630
+   },
+   {
+    "name": "cover_lgbm",
+    "z": 5.5,
+    "fill_rate": 0.9107857972029421,
+    "cycle_service": 0.9158461538461539,
+    "avg_inventory_units": 181030.5429136111,
+    "avg_inventory_value": 399005.72297344636,
+    "orders": 3574
+   },
+   {
+    "name": "cover_lgbm",
+    "z": 5.75,
+    "fill_rate": 0.9171757655556337,
+    "cycle_service": 0.9238461538461539,
+    "avg_inventory_units": 195053.29799664507,
+    "avg_inventory_value": 429691.19591032714,
+    "orders": 3531
+   },
+   {
+    "name": "cover_lgbm",
+    "z": 6.0,
+    "fill_rate": 0.9227299819504786,
+    "cycle_service": 0.9299999999999999,
+    "avg_inventory_units": 209219.44949801682,
+    "avg_inventory_value": 460858.80934682436,
+    "orders": 3472
+   },
+   {
+    "name": "cover_lgbm",
+    "z": 6.25,
+    "fill_rate": 0.927567980607448,
+    "cycle_service": 0.9356923076923077,
+    "avg_inventory_units": 223478.73631601018,
+    "avg_inventory_value": 492268.4749831964,
+    "orders": 3431
+   },
+   {
+    "name": "cover_lgbm",
+    "z": 6.5,
+    "fill_rate": 0.9317466024255033,
+    "cycle_service": 0.9396923076923077,
+    "avg_inventory_units": 237848.3065609583,
+    "avg_inventory_value": 523867.2422887372,
+    "orders": 3385
+   },
+   {
+    "name": "cover_lgbm",
+    "z": 6.75,
+    "fill_rate": 0.9355664826192468,
+    "cycle_service": 0.9436923076923077,
+    "avg_inventory_units": 252294.81771385015,
+    "avg_inventory_value": 555622.50923859,
+    "orders": 3347
+   },
+   {
+    "name": "cover_lgbm",
+    "z": 7.0,
+    "fill_rate": 0.9388926609795915,
+    "cycle_service": 0.946,
+    "avg_inventory_units": 266812.26552653284,
+    "avg_inventory_value": 587425.1697504341,
+    "orders": 3318
+   }
+  ],
+  "cover_ens": [
+   {
+    "name": "cover_ens",
+    "z": 1.0,
+    "fill_rate": 0.1733824529175141,
+    "cycle_service": 0.1987692307692308,
+    "avg_inventory_units": 3297.0553656449792,
+    "avg_inventory_value": 8063.395910392589,
+    "orders": 5297
+   },
+   {
+    "name": "cover_ens",
+    "z": 1.25,
+    "fill_rate": 0.2657507187947566,
+    "cycle_service": 0.2801538461538462,
+    "avg_inventory_units": 5939.9810183979,
+    "avg_inventory_value": 14266.852912803453,
+    "orders": 5185
+   },
+   {
+    "name": "cover_ens",
+    "z": 1.5,
+    "fill_rate": 0.36067967394101963,
+    "cycle_service": 0.3649230769230769,
+    "avg_inventory_units": 9857.419740253394,
+    "avg_inventory_value": 23434.335897638695,
+    "orders": 5076
+   },
+   {
+    "name": "cover_ens",
+    "z": 1.75,
+    "fill_rate": 0.4504847653921446,
+    "cycle_service": 0.4433846153846154,
+    "avg_inventory_units": 15204.081837353018,
+    "avg_inventory_value": 35658.39597026219,
+    "orders": 4966
+   },
+   {
+    "name": "cover_ens",
+    "z": 2.0,
+    "fill_rate": 0.5324944033149619,
+    "cycle_service": 0.518,
+    "avg_inventory_units": 21808.33968212681,
+    "avg_inventory_value": 50632.519600413165,
+    "orders": 4849
+   },
+   {
+    "name": "cover_ens",
+    "z": 2.25,
+    "fill_rate": 0.6038134285424268,
+    "cycle_service": 0.5860000000000001,
+    "avg_inventory_units": 29613.223382976113,
+    "avg_inventory_value": 68446.74010897677,
+    "orders": 4761
+   },
+   {
+    "name": "cover_ens",
+    "z": 2.5,
+    "fill_rate": 0.6650822132181003,
+    "cycle_service": 0.6435384615384616,
+    "avg_inventory_units": 38473.55294292594,
+    "avg_inventory_value": 88498.06173104589,
+    "orders": 4665
+   },
+   {
+    "name": "cover_ens",
+    "z": 2.75,
+    "fill_rate": 0.7153443480459826,
+    "cycle_service": 0.6950769230769231,
+    "avg_inventory_units": 48349.37618846613,
+    "avg_inventory_value": 110598.4758184196,
+    "orders": 4584
+   },
+   {
+    "name": "cover_ens",
+    "z": 3.0,
+    "fill_rate": 0.75684954874637,
+    "cycle_service": 0.74,
+    "avg_inventory_units": 59045.080488055144,
+    "avg_inventory_value": 134447.57952639292,
+    "orders": 4504
+   },
+   {
+    "name": "cover_ens",
+    "z": 3.25,
+    "fill_rate": 0.7903885866166805,
+    "cycle_service": 0.7806153846153846,
+    "avg_inventory_units": 70474.85012593972,
+    "avg_inventory_value": 159887.0155062821,
+    "orders": 4413
+   },
+   {
+    "name": "cover_ens",
+    "z": 3.5,
+    "fill_rate": 0.8180537296129041,
+    "cycle_service": 0.8109230769230769,
+    "avg_inventory_units": 82487.14022490245,
+    "avg_inventory_value": 186527.34327831207,
+    "orders": 4324
+   },
+   {
+    "name": "cover_ens",
+    "z": 3.75,
+    "fill_rate": 0.8415893256140118,
+    "cycle_service": 0.835076923076923,
+    "avg_inventory_units": 94928.3629429138,
+    "avg_inventory_value": 214125.69419891073,
+    "orders": 4254
+   },
+   {
+    "name": "cover_ens",
+    "z": 4.0,
+    "fill_rate": 0.8614149824458712,
+    "cycle_service": 0.8587692307692307,
+    "avg_inventory_units": 107729.73789341947,
+    "avg_inventory_value": 242592.23528636477,
+    "orders": 4187
+   },
+   {
+    "name": "cover_ens",
+    "z": 4.25,
+    "fill_rate": 0.8774451090886645,
+    "cycle_service": 0.878,
+    "avg_inventory_units": 120868.6492434015,
+    "avg_inventory_value": 271859.8780946601,
+    "orders": 4132
+   },
+   {
+    "name": "cover_ens",
+    "z": 4.5,
+    "fill_rate": 0.8908026832019789,
+    "cycle_service": 0.8936923076923077,
+    "avg_inventory_units": 134263.12333353254,
+    "avg_inventory_value": 301585.99232435646,
+    "orders": 4059
+   },
+   {
+    "name": "cover_ens",
+    "z": 4.75,
+    "fill_rate": 0.9016748974887585,
+    "cycle_service": 0.9055384615384615,
+    "avg_inventory_units": 147906.89167033363,
+    "avg_inventory_value": 331907.56851382344,
+    "orders": 3984
+   },
+   {
+    "name": "cover_ens",
+    "z": 5.0,
+    "fill_rate": 0.9106283544686795,
+    "cycle_service": 0.9150769230769231,
+    "avg_inventory_units": 161747.01754356117,
+    "avg_inventory_value": 362711.893318821,
+    "orders": 3920
+   },
+   {
+    "name": "cover_ens",
+    "z": 5.25,
+    "fill_rate": 0.9179908424775294,
+    "cycle_service": 0.9235384615384615,
+    "avg_inventory_units": 175755.43152242244,
+    "avg_inventory_value": 393922.66459740984,
+    "orders": 3842
+   },
+   {
+    "name": "cover_ens",
+    "z": 5.5,
+    "fill_rate": 0.9242369984152107,
+    "cycle_service": 0.9303076923076923,
+    "avg_inventory_units": 189904.20030275712,
+    "avg_inventory_value": 425422.2120509551,
+    "orders": 3783
+   },
+   {
+    "name": "cover_ens",
+    "z": 5.75,
+    "fill_rate": 0.9297717831560518,
+    "cycle_service": 0.9364615384615385,
+    "avg_inventory_units": 204174.85130503756,
+    "avg_inventory_value": 457260.7690764309,
+    "orders": 3728
+   },
+   {
+    "name": "cover_ens",
+    "z": 6.0,
+    "fill_rate": 0.9345719691474281,
+    "cycle_service": 0.9418461538461539,
+    "avg_inventory_units": 218530.542883955,
+    "avg_inventory_value": 489336.3269596578,
+    "orders": 3689
+   },
+   {
+    "name": "cover_ens",
+    "z": 6.25,
+    "fill_rate": 0.9388659723696181,
+    "cycle_service": 0.9455384615384615,
+    "avg_inventory_units": 232956.7700566668,
+    "avg_inventory_value": 521565.406068514,
+    "orders": 3643
+   },
+   {
+    "name": "cover_ens",
+    "z": 6.5,
+    "fill_rate": 0.9427642679842678,
+    "cycle_service": 0.95,
+    "avg_inventory_units": 247434.85072955914,
+    "avg_inventory_value": 553907.2556252296,
+    "orders": 3612
+   },
+   {
+    "name": "cover_ens",
+    "z": 6.75,
+    "fill_rate": 0.9463622213406058,
+    "cycle_service": 0.9523076923076923,
+    "avg_inventory_units": 261958.6700655651,
+    "avg_inventory_value": 586370.8385068338,
+    "orders": 3575
+   },
+   {
+    "name": "cover_ens",
+    "z": 7.0,
+    "fill_rate": 0.9496651373834669,
+    "cycle_service": 0.9541538461538461,
+    "avg_inventory_units": 276539.0776148505,
+    "avg_inventory_value": 618919.9718603399,
+    "orders": 3531
+   }
+  ]
+ },
+ "allocation": {
+  "skus": 60,
+  "dcs": [
+   "DC-Midlands (UK)",
+   "DC-Rotterdam (NL)",
+   "DC-Valencia (ES)"
+  ],
+  "regions": [
+   "UK",
+   "Ireland",
+   "DACH",
+   "France",
+   "Benelux",
+   "Iberia",
+   "Nordics",
+   "South-East EU",
+   "Rest of World"
+  ],
+  "demand_units": 21806.0,
+  "stock_units": 18447.0,
+  "results": [
+   {
+    "method": "greedy_nearest_dc",
+    "total_cost": 22854.18,
+    "transport_cost": 4701.59,
+    "fixed_lane_cost": 12450.0,
+    "unmet_penalty": 5702.59,
+    "fill_rate": 0.8191,
+    "min_region_fill": 0.0,
+    "lanes_used": 11,
+    "seconds": 0.002,
+    "mip_gap": null
+   },
+   {
+    "method": "milp",
+    "total_cost": 13295.8,
+    "transport_cost": 4096.31,
+    "fixed_lane_cost": 2835.0,
+    "unmet_penalty": 6364.49,
+    "fill_rate": 0.7825,
+    "min_region_fill": 0.0,
+    "lanes_used": 3,
+    "seconds": 0.102,
+    "mip_gap": 0.00044106018800382123
+   },
+   {
+    "method": "milp_floor_60%",
+    "total_cost": 21177.45,
+    "transport_cost": 4169.93,
+    "fixed_lane_cost": 10380.0,
+    "unmet_penalty": 6627.52,
+    "fill_rate": 0.7853,
+    "min_region_fill": 0.6,
+    "lanes_used": 11,
+    "seconds": 0.942,
+    "mip_gap": 0.0006160584871502614
+   },
+   {
+    "method": "milp_floor_75%",
+    "total_cost": 21687.1,
+    "transport_cost": 4164.65,
+    "fixed_lane_cost": 10380.0,
+    "unmet_penalty": 7142.45,
+    "fill_rate": 0.7775,
+    "min_region_fill": 0.75,
+    "lanes_used": 11,
+    "seconds": 2.516,
+    "mip_gap": 0.0009983842654548811
+   }
+  ]
+ },
+ "replenishment_cover_weeks_for_90pct_fill": 5.0,
+ "seconds": 40.6
+}

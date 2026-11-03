@@ -1,0 +1,3231 @@
+[
+{
+"file": "0000_sup_uk.pdf",
+"route": "review",
+"reasons": [
+"unknown_po"
+],
+"doc_correct": true,
+"issues": [
+"unknown_po"
+]
+},
+{
+"file": "0001_sup_de.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0002_sup_us.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0003_car_fastfreight.pdf",
+"route": "review",
+"reasons": [
+"unknown_po"
+],
+"doc_correct": true,
+"issues": [
+"unknown_po"
+]
+},
+{
+"file": "0004_car_nordsee.pdf",
+"route": "review",
+"reasons": [
+"low_confidence:doc_date",
+"warning:ambiguous day/month order in doc_date"
+],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0005_buy_cornerstore.txt",
+"route": "review",
+"reasons": [
+"low_confidence:doc_date",
+"unknown_sku",
+"warning:ambiguous day/month order in doc_date"
+],
+"doc_correct": true,
+"issues": [
+"unknown_sku"
+]
+},
+{
+"file": "0006_buy_maison.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0007_sup_uk.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0008_sup_de.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0009_sup_us.txt",
+"route": "review",
+"reasons": [
+"total_mismatch"
+],
+"doc_correct": true,
+"issues": [
+"total_mismatch"
+]
+},
+{
+"file": "0010_car_fastfreight.pdf",
+"route": "review",
+"reasons": [
+"unknown_po"
+],
+"doc_correct": true,
+"issues": [
+"unknown_po"
+]
+},
+{
+"file": "0011_car_nordsee.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0012_buy_cornerstore.txt",
+"route": "review",
+"reasons": [
+"qty_not_case_multiple"
+],
+"doc_correct": true,
+"issues": [
+"qty_not_case_multiple"
+]
+},
+{
+"file": "0013_buy_maison.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0014_sup_uk.txt",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0015_sup_de.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0016_sup_us.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0017_car_fastfreight.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0018_car_nordsee.txt",
+"route": "review",
+"reasons": [
+"unknown_po"
+],
+"doc_correct": true,
+"issues": [
+"unknown_po"
+]
+},
+{
+"file": "0019_buy_cornerstore.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0020_buy_maison.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0021_sup_uk.txt",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0022_sup_de.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0023_sup_us.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0024_car_fastfreight.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0025_car_nordsee.txt",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0026_buy_cornerstore.txt",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0027_buy_maison.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0028_sup_uk.txt",
+"route": "review",
+"reasons": [
+"qty_exceeds_po"
+],
+"doc_correct": true,
+"issues": [
+"qty_exceeds_po"
+]
+},
+{
+"file": "0029_sup_de.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0030_sup_us.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0031_car_fastfreight.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0032_car_nordsee.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0033_buy_cornerstore.txt",
+"route": "review",
+"reasons": [
+"price_mismatch_vs_list"
+],
+"doc_correct": true,
+"issues": [
+"price_mismatch_vs_list"
+]
+},
+{
+"file": "0034_buy_maison.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0035_sup_uk.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0036_sup_de.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0037_sup_us.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0038_car_fastfreight.pdf",
+"route": "review",
+"reasons": [
+"unknown_po"
+],
+"doc_correct": true,
+"issues": [
+"unknown_po"
+]
+},
+{
+"file": "0039_car_nordsee.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0040_buy_cornerstore.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0041_buy_maison.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0042_sup_uk.pdf",
+"route": "review",
+"reasons": [
+"qty_exceeds_po"
+],
+"doc_correct": true,
+"issues": [
+"qty_exceeds_po"
+]
+},
+{
+"file": "0043_sup_de.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0044_sup_us.pdf",
+"route": "review",
+"reasons": [
+"unknown_po"
+],
+"doc_correct": true,
+"issues": [
+"unknown_po"
+]
+},
+{
+"file": "0045_car_fastfreight.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0046_car_nordsee.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0047_buy_cornerstore.pdf",
+"route": "review",
+"reasons": [
+"total_mismatch"
+],
+"doc_correct": true,
+"issues": [
+"total_mismatch"
+]
+},
+{
+"file": "0048_buy_maison.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0049_sup_uk.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0050_sup_de.pdf",
+"route": "review",
+"reasons": [
+"duplicate_invoice"
+],
+"doc_correct": true,
+"issues": [
+"duplicate_invoice"
+]
+},
+{
+"file": "0051_sup_us.txt",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0052_car_fastfreight.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0053_car_nordsee.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0054_buy_cornerstore.txt",
+"route": "review",
+"reasons": [
+"qty_not_case_multiple"
+],
+"doc_correct": true,
+"issues": [
+"qty_not_case_multiple"
+]
+},
+{
+"file": "0055_buy_maison.pdf",
+"route": "review",
+"reasons": [
+"unknown_sku"
+],
+"doc_correct": true,
+"issues": [
+"unknown_sku"
+]
+},
+{
+"file": "0056_sup_uk.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0057_sup_de.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0058_sup_us.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0059_car_fastfreight.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0060_car_nordsee.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0061_buy_cornerstore.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0062_buy_maison.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0063_sup_uk.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0064_sup_de.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0065_sup_us.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0066_car_fastfreight.pdf",
+"route": "review",
+"reasons": [
+"qty_exceeds_po"
+],
+"doc_correct": true,
+"issues": [
+"qty_exceeds_po"
+]
+},
+{
+"file": "0067_car_nordsee.pdf",
+"route": "review",
+"reasons": [
+"unknown_po"
+],
+"doc_correct": true,
+"issues": [
+"unknown_po"
+]
+},
+{
+"file": "0068_buy_cornerstore.txt",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0069_buy_maison.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0070_sup_uk.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0071_sup_de.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0072_sup_us.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0073_car_fastfreight.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0074_car_nordsee.pdf",
+"route": "review",
+"reasons": [
+"unknown_po"
+],
+"doc_correct": true,
+"issues": [
+"unknown_po"
+]
+},
+{
+"file": "0075_buy_cornerstore.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0076_buy_maison.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0077_sup_uk.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0078_sup_de.pdf",
+"route": "review",
+"reasons": [
+"qty_exceeds_po"
+],
+"doc_correct": true,
+"issues": [
+"qty_exceeds_po"
+]
+},
+{
+"file": "0079_sup_us.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0080_car_fastfreight.pdf",
+"route": "review",
+"reasons": [
+"qty_exceeds_po"
+],
+"doc_correct": true,
+"issues": [
+"qty_exceeds_po"
+]
+},
+{
+"file": "0081_car_nordsee.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0082_buy_cornerstore.pdf",
+"route": "review",
+"reasons": [
+"qty_not_case_multiple"
+],
+"doc_correct": true,
+"issues": [
+"qty_not_case_multiple"
+]
+},
+{
+"file": "0083_buy_maison.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0084_sup_uk.pdf",
+"route": "review",
+"reasons": [
+"price_variance"
+],
+"doc_correct": true,
+"issues": [
+"price_variance"
+]
+},
+{
+"file": "0085_sup_de.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0086_sup_us.pdf",
+"route": "review",
+"reasons": [
+"total_mismatch"
+],
+"doc_correct": true,
+"issues": [
+"total_mismatch"
+]
+},
+{
+"file": "0087_car_fastfreight.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0088_car_nordsee.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0089_buy_cornerstore.txt",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0090_buy_maison.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0091_sup_uk.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0092_sup_de.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0093_sup_us.pdf",
+"route": "review",
+"reasons": [
+"duplicate_invoice"
+],
+"doc_correct": true,
+"issues": [
+"duplicate_invoice"
+]
+},
+{
+"file": "0094_car_fastfreight.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0095_car_nordsee.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0096_buy_cornerstore.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0097_buy_maison.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0098_sup_uk.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0099_sup_de.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0100_sup_us.pdf",
+"route": "review",
+"reasons": [
+"duplicate_invoice"
+],
+"doc_correct": true,
+"issues": [
+"duplicate_invoice"
+]
+},
+{
+"file": "0101_car_fastfreight.pdf",
+"route": "review",
+"reasons": [
+"qty_exceeds_po"
+],
+"doc_correct": true,
+"issues": [
+"qty_exceeds_po"
+]
+},
+{
+"file": "0102_car_nordsee.txt",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0103_buy_cornerstore.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0104_buy_maison.pdf",
+"route": "review",
+"reasons": [
+"price_mismatch_vs_list"
+],
+"doc_correct": true,
+"issues": [
+"price_mismatch_vs_list"
+]
+},
+{
+"file": "0105_sup_uk.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0106_sup_de.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0107_sup_us.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0108_car_fastfreight.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0109_car_nordsee.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0110_buy_cornerstore.txt",
+"route": "review",
+"reasons": [
+"qty_not_case_multiple"
+],
+"doc_correct": true,
+"issues": [
+"qty_not_case_multiple"
+]
+},
+{
+"file": "0111_buy_maison.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0112_sup_uk.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0113_sup_de.pdf",
+"route": "review",
+"reasons": [
+"total_mismatch"
+],
+"doc_correct": true,
+"issues": [
+"total_mismatch"
+]
+},
+{
+"file": "0114_sup_us.pdf",
+"route": "review",
+"reasons": [
+"qty_exceeds_po"
+],
+"doc_correct": true,
+"issues": [
+"qty_exceeds_po"
+]
+},
+{
+"file": "0115_car_fastfreight.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0116_car_nordsee.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0117_buy_cornerstore.pdf",
+"route": "review",
+"reasons": [
+"qty_not_case_multiple"
+],
+"doc_correct": true,
+"issues": [
+"qty_not_case_multiple"
+]
+},
+{
+"file": "0118_buy_maison.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0119_sup_uk.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0120_sup_de.pdf",
+"route": "review",
+"reasons": [
+"price_variance"
+],
+"doc_correct": true,
+"issues": [
+"price_variance"
+]
+},
+{
+"file": "0121_sup_us.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0122_car_fastfreight.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0123_car_nordsee.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0124_buy_cornerstore.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0125_buy_maison.pdf",
+"route": "review",
+"reasons": [
+"unknown_sku"
+],
+"doc_correct": true,
+"issues": [
+"unknown_sku"
+]
+},
+{
+"file": "0126_sup_uk.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0127_sup_de.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0128_sup_us.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0129_car_fastfreight.pdf",
+"route": "review",
+"reasons": [
+"carton_mismatch"
+],
+"doc_correct": true,
+"issues": [
+"carton_mismatch"
+]
+},
+{
+"file": "0130_car_nordsee.pdf",
+"route": "review",
+"reasons": [
+"unknown_po"
+],
+"doc_correct": true,
+"issues": [
+"unknown_po"
+]
+},
+{
+"file": "0131_buy_cornerstore.txt",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0132_buy_maison.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0133_sup_uk.txt",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0134_sup_de.pdf",
+"route": "review",
+"reasons": [
+"qty_exceeds_po"
+],
+"doc_correct": true,
+"issues": [
+"qty_exceeds_po"
+]
+},
+{
+"file": "0135_sup_us.txt",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0136_car_fastfreight.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0137_car_nordsee.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0138_buy_cornerstore.txt",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0139_buy_maison.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0140_sup_uk.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0141_sup_de.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0142_sup_us.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0143_car_fastfreight.pdf",
+"route": "review",
+"reasons": [
+"qty_exceeds_po"
+],
+"doc_correct": true,
+"issues": [
+"qty_exceeds_po"
+]
+},
+{
+"file": "0144_car_nordsee.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0145_buy_cornerstore.txt",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0146_buy_maison.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0147_sup_uk.txt",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0148_sup_de.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0149_sup_us.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0150_car_fastfreight.pdf",
+"route": "review",
+"reasons": [
+"unknown_po"
+],
+"doc_correct": true,
+"issues": [
+"unknown_po"
+]
+},
+{
+"file": "0151_car_nordsee.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0152_buy_cornerstore.txt",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0153_buy_maison.pdf",
+"route": "review",
+"reasons": [
+"total_mismatch"
+],
+"doc_correct": true,
+"issues": [
+"total_mismatch"
+]
+},
+{
+"file": "0154_sup_uk.pdf",
+"route": "review",
+"reasons": [
+"qty_exceeds_po"
+],
+"doc_correct": true,
+"issues": [
+"qty_exceeds_po"
+]
+},
+{
+"file": "0155_sup_de.pdf",
+"route": "review",
+"reasons": [
+"total_mismatch"
+],
+"doc_correct": true,
+"issues": [
+"total_mismatch"
+]
+},
+{
+"file": "0156_sup_us.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0157_car_fastfreight.pdf",
+"route": "review",
+"reasons": [
+"carton_mismatch"
+],
+"doc_correct": true,
+"issues": [
+"carton_mismatch"
+]
+},
+{
+"file": "0158_car_nordsee.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0159_buy_cornerstore.txt",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0160_buy_maison.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0161_sup_uk.pdf",
+"route": "review",
+"reasons": [
+"price_variance"
+],
+"doc_correct": true,
+"issues": [
+"price_variance"
+]
+},
+{
+"file": "0162_sup_de.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0163_sup_us.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0164_car_fastfreight.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0165_car_nordsee.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0166_buy_cornerstore.txt",
+"route": "review",
+"reasons": [
+"unknown_sku"
+],
+"doc_correct": true,
+"issues": [
+"unknown_sku"
+]
+},
+{
+"file": "0167_buy_maison.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0168_sup_uk.pdf",
+"route": "review",
+"reasons": [
+"unknown_po"
+],
+"doc_correct": true,
+"issues": [
+"unknown_po"
+]
+},
+{
+"file": "0169_sup_de.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0170_sup_us.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0171_car_fastfreight.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0172_car_nordsee.txt",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0173_buy_cornerstore.txt",
+"route": "review",
+"reasons": [
+"unknown_sku"
+],
+"doc_correct": true,
+"issues": [
+"unknown_sku"
+]
+},
+{
+"file": "0174_buy_maison.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0175_sup_uk.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0176_sup_de.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0177_sup_us.pdf",
+"route": "review",
+"reasons": [
+"qty_exceeds_po"
+],
+"doc_correct": true,
+"issues": [
+"qty_exceeds_po"
+]
+},
+{
+"file": "0178_car_fastfreight.pdf",
+"route": "review",
+"reasons": [
+"qty_exceeds_po"
+],
+"doc_correct": true,
+"issues": [
+"qty_exceeds_po"
+]
+},
+{
+"file": "0179_car_nordsee.pdf",
+"route": "review",
+"reasons": [
+"qty_exceeds_po"
+],
+"doc_correct": true,
+"issues": [
+"qty_exceeds_po"
+]
+},
+{
+"file": "0180_buy_cornerstore.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0181_buy_maison.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0182_sup_uk.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0183_sup_de.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0184_sup_us.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0185_car_fastfreight.pdf",
+"route": "review",
+"reasons": [
+"qty_exceeds_po"
+],
+"doc_correct": true,
+"issues": [
+"qty_exceeds_po"
+]
+},
+{
+"file": "0186_car_nordsee.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0187_buy_cornerstore.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0188_buy_maison.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0189_sup_uk.pdf",
+"route": "review",
+"reasons": [
+"total_mismatch"
+],
+"doc_correct": true,
+"issues": [
+"total_mismatch"
+]
+},
+{
+"file": "0190_sup_de.pdf",
+"route": "review",
+"reasons": [
+"unknown_po"
+],
+"doc_correct": true,
+"issues": [
+"unknown_po"
+]
+},
+{
+"file": "0191_sup_us.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0192_car_fastfreight.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0193_car_nordsee.pdf",
+"route": "review",
+"reasons": [
+"unknown_po"
+],
+"doc_correct": true,
+"issues": [
+"unknown_po"
+]
+},
+{
+"file": "0194_buy_cornerstore.pdf",
+"route": "review",
+"reasons": [
+"total_mismatch"
+],
+"doc_correct": true,
+"issues": [
+"total_mismatch"
+]
+},
+{
+"file": "0195_buy_maison.pdf",
+"route": "review",
+"reasons": [
+"price_mismatch_vs_list"
+],
+"doc_correct": true,
+"issues": [
+"price_mismatch_vs_list"
+]
+},
+{
+"file": "0196_sup_uk.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0197_sup_de.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0198_sup_us.txt",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0199_car_fastfreight.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0200_car_nordsee.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0201_buy_cornerstore.txt",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0202_buy_maison.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0203_sup_uk.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0204_sup_de.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0205_sup_us.txt",
+"route": "review",
+"reasons": [
+"price_variance"
+],
+"doc_correct": true,
+"issues": [
+"price_variance"
+]
+},
+{
+"file": "0206_car_fastfreight.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0207_car_nordsee.txt",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0208_buy_cornerstore.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0209_buy_maison.pdf",
+"route": "review",
+"reasons": [
+"unknown_sku"
+],
+"doc_correct": true,
+"issues": [
+"unknown_sku"
+]
+},
+{
+"file": "0210_sup_uk.pdf",
+"route": "review",
+"reasons": [
+"unknown_po"
+],
+"doc_correct": true,
+"issues": [
+"unknown_po"
+]
+},
+{
+"file": "0211_sup_de.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0212_sup_us.txt",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0213_car_fastfreight.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0214_car_nordsee.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0215_buy_cornerstore.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0216_buy_maison.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0217_sup_uk.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0218_sup_de.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0219_sup_us.txt",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0220_car_fastfreight.pdf",
+"route": "review",
+"reasons": [
+"qty_exceeds_po"
+],
+"doc_correct": true,
+"issues": [
+"qty_exceeds_po"
+]
+},
+{
+"file": "0221_car_nordsee.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0222_buy_cornerstore.txt",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0223_buy_maison.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0224_sup_uk.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0225_sup_de.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0226_sup_us.pdf",
+"route": "review",
+"reasons": [
+"duplicate_invoice"
+],
+"doc_correct": true,
+"issues": [
+"duplicate_invoice"
+]
+},
+{
+"file": "0227_car_fastfreight.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0228_car_nordsee.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0229_buy_cornerstore.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0230_buy_maison.pdf",
+"route": "review",
+"reasons": [
+"price_mismatch_vs_list"
+],
+"doc_correct": true,
+"issues": [
+"price_mismatch_vs_list"
+]
+},
+{
+"file": "0231_sup_uk.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0232_sup_de.pdf",
+"route": "review",
+"reasons": [
+"duplicate_invoice"
+],
+"doc_correct": true,
+"issues": [
+"duplicate_invoice"
+]
+},
+{
+"file": "0233_sup_us.pdf",
+"route": "review",
+"reasons": [
+"unknown_po"
+],
+"doc_correct": true,
+"issues": [
+"unknown_po"
+]
+},
+{
+"file": "0234_car_fastfreight.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0235_car_nordsee.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0236_buy_cornerstore.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0237_buy_maison.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0238_sup_uk.pdf",
+"route": "review",
+"reasons": [
+"due_before_issue"
+],
+"doc_correct": true,
+"issues": [
+"due_before_issue"
+]
+},
+{
+"file": "0239_sup_de.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0240_sup_us.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0241_car_fastfreight.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0242_car_nordsee.pdf",
+"route": "review",
+"reasons": [
+"qty_exceeds_po"
+],
+"doc_correct": true,
+"issues": [
+"qty_exceeds_po"
+]
+},
+{
+"file": "0243_buy_cornerstore.txt",
+"route": "review",
+"reasons": [
+"total_mismatch"
+],
+"doc_correct": true,
+"issues": [
+"total_mismatch"
+]
+},
+{
+"file": "0244_buy_maison.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0245_sup_uk.txt",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0246_sup_de.pdf",
+"route": "review",
+"reasons": [
+"qty_exceeds_po"
+],
+"doc_correct": true,
+"issues": [
+"qty_exceeds_po"
+]
+},
+{
+"file": "0247_sup_us.txt",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0248_car_fastfreight.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0249_car_nordsee.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0250_buy_cornerstore.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0251_buy_maison.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0252_sup_uk.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0253_sup_de.pdf",
+"route": "review",
+"reasons": [
+"price_variance"
+],
+"doc_correct": true,
+"issues": [
+"price_variance"
+]
+},
+{
+"file": "0254_sup_us.txt",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0255_car_fastfreight.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0256_car_nordsee.pdf",
+"route": "review",
+"reasons": [
+"qty_exceeds_po"
+],
+"doc_correct": true,
+"issues": [
+"qty_exceeds_po"
+]
+},
+{
+"file": "0257_buy_cornerstore.txt",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0258_buy_maison.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0259_sup_uk.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0260_sup_de.pdf",
+"route": "review",
+"reasons": [
+"qty_exceeds_po"
+],
+"doc_correct": true,
+"issues": [
+"qty_exceeds_po"
+]
+},
+{
+"file": "0261_sup_us.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0262_car_fastfreight.pdf",
+"route": "review",
+"reasons": [
+"unknown_po"
+],
+"doc_correct": true,
+"issues": [
+"unknown_po"
+]
+},
+{
+"file": "0263_car_nordsee.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0264_buy_cornerstore.pdf",
+"route": "review",
+"reasons": [
+"price_mismatch_vs_list"
+],
+"doc_correct": true,
+"issues": [
+"price_mismatch_vs_list"
+]
+},
+{
+"file": "0265_buy_maison.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0266_sup_uk.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0267_sup_de.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0268_sup_us.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0269_car_fastfreight.pdf",
+"route": "review",
+"reasons": [
+"unknown_po"
+],
+"doc_correct": true,
+"issues": [
+"unknown_po"
+]
+},
+{
+"file": "0270_car_nordsee.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0271_buy_cornerstore.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0272_buy_maison.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0273_sup_uk.pdf",
+"route": "review",
+"reasons": [
+"duplicate_invoice"
+],
+"doc_correct": true,
+"issues": [
+"duplicate_invoice"
+]
+},
+{
+"file": "0274_sup_de.pdf",
+"route": "review",
+"reasons": [
+"unknown_po"
+],
+"doc_correct": true,
+"issues": [
+"unknown_po"
+]
+},
+{
+"file": "0275_sup_us.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0276_car_fastfreight.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0277_car_nordsee.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0278_buy_cornerstore.txt",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0279_buy_maison.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0280_sup_uk.txt",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0281_sup_de.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0282_sup_us.pdf",
+"route": "review",
+"reasons": [
+"price_variance"
+],
+"doc_correct": true,
+"issues": [
+"price_variance"
+]
+},
+{
+"file": "0283_car_fastfreight.pdf",
+"route": "review",
+"reasons": [
+"carton_mismatch"
+],
+"doc_correct": true,
+"issues": [
+"carton_mismatch"
+]
+},
+{
+"file": "0284_car_nordsee.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0285_buy_cornerstore.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0286_buy_maison.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0287_sup_uk.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0288_sup_de.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0289_sup_us.txt",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0290_car_fastfreight.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0291_car_nordsee.txt",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0292_buy_cornerstore.txt",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0293_buy_maison.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0294_sup_uk.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0295_sup_de.pdf",
+"route": "review",
+"reasons": [
+"qty_exceeds_po"
+],
+"doc_correct": true,
+"issues": [
+"qty_exceeds_po"
+]
+},
+{
+"file": "0296_sup_us.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0297_car_fastfreight.pdf",
+"route": "review",
+"reasons": [
+"carton_mismatch"
+],
+"doc_correct": true,
+"issues": [
+"carton_mismatch"
+]
+},
+{
+"file": "0298_car_nordsee.txt",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0299_buy_cornerstore.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0300_buy_maison.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0301_sup_uk.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0302_sup_de.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0303_sup_us.txt",
+"route": "review",
+"reasons": [
+"due_before_issue"
+],
+"doc_correct": true,
+"issues": [
+"due_before_issue"
+]
+},
+{
+"file": "0304_car_fastfreight.pdf",
+"route": "review",
+"reasons": [
+"qty_exceeds_po"
+],
+"doc_correct": true,
+"issues": [
+"qty_exceeds_po"
+]
+},
+{
+"file": "0305_car_nordsee.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0306_buy_cornerstore.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0307_buy_maison.pdf",
+"route": "review",
+"reasons": [
+"total_mismatch"
+],
+"doc_correct": true,
+"issues": [
+"total_mismatch"
+]
+},
+{
+"file": "0308_sup_uk.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0309_sup_de.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0310_sup_us.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0311_car_fastfreight.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0312_car_nordsee.pdf",
+"route": "review",
+"reasons": [
+"unknown_po"
+],
+"doc_correct": true,
+"issues": [
+"unknown_po"
+]
+},
+{
+"file": "0313_buy_cornerstore.pdf",
+"route": "review",
+"reasons": [
+"price_mismatch_vs_list"
+],
+"doc_correct": true,
+"issues": [
+"price_mismatch_vs_list"
+]
+},
+{
+"file": "0314_buy_maison.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0315_sup_uk.txt",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0316_sup_de.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0317_sup_us.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0318_car_fastfreight.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0319_car_nordsee.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0320_buy_cornerstore.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0321_buy_maison.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0322_sup_uk.pdf",
+"route": "review",
+"reasons": [
+"due_before_issue"
+],
+"doc_correct": true,
+"issues": [
+"due_before_issue"
+]
+},
+{
+"file": "0323_sup_de.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0324_sup_us.txt",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0325_car_fastfreight.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0326_car_nordsee.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0327_buy_cornerstore.txt",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0328_buy_maison.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0329_sup_uk.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0330_sup_de.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0331_sup_us.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0332_car_fastfreight.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0333_car_nordsee.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0334_buy_cornerstore.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0335_buy_maison.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0336_sup_uk.pdf",
+"route": "review",
+"reasons": [
+"unknown_po"
+],
+"doc_correct": true,
+"issues": [
+"unknown_po"
+]
+},
+{
+"file": "0337_sup_de.pdf",
+"route": "review",
+"reasons": [
+"qty_exceeds_po"
+],
+"doc_correct": true,
+"issues": [
+"qty_exceeds_po"
+]
+},
+{
+"file": "0338_sup_us.pdf",
+"route": "review",
+"reasons": [
+"duplicate_invoice"
+],
+"doc_correct": true,
+"issues": [
+"duplicate_invoice"
+]
+},
+{
+"file": "0339_car_fastfreight.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0340_car_nordsee.pdf",
+"route": "review",
+"reasons": [
+"carton_mismatch"
+],
+"doc_correct": true,
+"issues": [
+"carton_mismatch"
+]
+},
+{
+"file": "0341_buy_cornerstore.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0342_buy_maison.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0343_sup_uk.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0344_sup_de.pdf",
+"route": "review",
+"reasons": [
+"duplicate_invoice"
+],
+"doc_correct": true,
+"issues": [
+"duplicate_invoice"
+]
+},
+{
+"file": "0345_sup_us.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0346_car_fastfreight.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0347_car_nordsee.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0348_buy_cornerstore.pdf",
+"route": "review",
+"reasons": [
+"qty_not_case_multiple"
+],
+"doc_correct": true,
+"issues": [
+"qty_not_case_multiple"
+]
+},
+{
+"file": "0349_buy_maison.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0350_sup_uk.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0351_sup_de.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0352_sup_us.txt",
+"route": "review",
+"reasons": [
+"qty_exceeds_po"
+],
+"doc_correct": true,
+"issues": [
+"qty_exceeds_po"
+]
+},
+{
+"file": "0353_car_fastfreight.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0354_car_nordsee.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0355_buy_cornerstore.pdf",
+"route": "review",
+"reasons": [
+"total_mismatch"
+],
+"doc_correct": true,
+"issues": [
+"total_mismatch"
+]
+},
+{
+"file": "0356_buy_maison.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0357_sup_uk.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0358_sup_de.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0359_sup_us.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0360_car_fastfreight.pdf",
+"route": "review",
+"reasons": [
+"unknown_po"
+],
+"doc_correct": true,
+"issues": [
+"unknown_po"
+]
+},
+{
+"file": "0361_car_nordsee.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0362_buy_cornerstore.txt",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0363_buy_maison.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0364_sup_uk.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0365_sup_de.pdf",
+"route": "review",
+"reasons": [
+"qty_exceeds_po"
+],
+"doc_correct": true,
+"issues": [
+"qty_exceeds_po"
+]
+},
+{
+"file": "0366_sup_us.pdf",
+"route": "review",
+"reasons": [
+"duplicate_invoice"
+],
+"doc_correct": true,
+"issues": [
+"duplicate_invoice"
+]
+},
+{
+"file": "0367_car_fastfreight.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0368_car_nordsee.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0369_buy_cornerstore.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0370_buy_maison.pdf",
+"route": "review",
+"reasons": [
+"price_mismatch_vs_list"
+],
+"doc_correct": true,
+"issues": [
+"price_mismatch_vs_list"
+]
+},
+{
+"file": "0371_sup_uk.txt",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0372_sup_de.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0373_sup_us.pdf",
+"route": "review",
+"reasons": [
+"due_before_issue"
+],
+"doc_correct": true,
+"issues": [
+"due_before_issue"
+]
+},
+{
+"file": "0374_car_fastfreight.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0375_car_nordsee.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0376_buy_cornerstore.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0377_buy_maison.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0378_sup_uk.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0379_sup_de.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0380_sup_us.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0381_car_fastfreight.pdf",
+"route": "review",
+"reasons": [
+"carton_mismatch"
+],
+"doc_correct": true,
+"issues": [
+"carton_mismatch"
+]
+},
+{
+"file": "0382_car_nordsee.pdf",
+"route": "review",
+"reasons": [
+"qty_exceeds_po"
+],
+"doc_correct": true,
+"issues": [
+"qty_exceeds_po"
+]
+},
+{
+"file": "0383_buy_cornerstore.txt",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0384_buy_maison.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0385_sup_uk.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0386_sup_de.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0387_sup_us.txt",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0388_car_fastfreight.pdf",
+"route": "review",
+"reasons": [
+"qty_exceeds_po"
+],
+"doc_correct": true,
+"issues": [
+"qty_exceeds_po"
+]
+},
+{
+"file": "0389_car_nordsee.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0390_buy_cornerstore.txt",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0391_buy_maison.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0392_sup_uk.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0393_sup_de.pdf",
+"route": "review",
+"reasons": [
+"price_variance"
+],
+"doc_correct": true,
+"issues": [
+"price_variance"
+]
+},
+{
+"file": "0394_sup_us.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0395_car_fastfreight.pdf",
+"route": "review",
+"reasons": [
+"qty_exceeds_po"
+],
+"doc_correct": true,
+"issues": [
+"qty_exceeds_po"
+]
+},
+{
+"file": "0396_car_nordsee.txt",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0397_buy_cornerstore.pdf",
+"route": "review",
+"reasons": [
+"price_mismatch_vs_list"
+],
+"doc_correct": true,
+"issues": [
+"price_mismatch_vs_list"
+]
+},
+{
+"file": "0398_buy_maison.pdf",
+"route": "review",
+"reasons": [
+"price_mismatch_vs_list"
+],
+"doc_correct": true,
+"issues": [
+"price_mismatch_vs_list"
+]
+},
+{
+"file": "0399_sup_uk.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+}
+]

@@ -1,14 +1,18 @@
-"""Periodic-review order-up-to policy and a backorder simulation to score it.
+"""Replenishment policies and a backorder simulation to score them.
 
-Timing (weekly buckets): review at the end of week t, the order arrives at the start of week t+2.
-So the order must protect weeks t+1 and t+2 (lead time 1 + review period 1):
+Timing (weekly buckets): review at the end of week t, the order arrives at the start of week t+2,
+so an order must protect weeks t+1 and t+2 (lead time 1 + review period 1). Two policy families:
 
-    S_t = F(t+1) + F(t+2) + z * RMSE_i
+* textbook order-up-to:  S_t = F(t+1) + F(t+2) + z * RMSE_i
+  RMSE_i is SKU i's error of the 2-week cumulative forecast over a calibration block of origins
+  that precedes the evaluation block. The buffer is a fixed number of units per SKU.
+* weeks of cover:        S_t = N * F(t+1)
+  The rule of thumb most planners already run. The buffer scales with the forecast level.
 
-RMSE_i is SKU i's root-mean-square error of the 2-week cumulative forecast over a calibration block of
-origins that precedes the evaluation block. Variants that were tried and lost on this data (kept in
-``scripts/`` notes, not in the main path): bias-corrected SS (mean + z*std of residuals), SS scaled
-with the forecast level, and ABC-differentiated z.
+On this data the second family wins at every fill rate (see README): errors grow with demand, and
+the Q4 ramp makes a buffer sized on summer residuals too small exactly when it matters. Variants
+that were tried and lost: bias-corrected SS (mean + z*std), SS scaled by calibration CV, and
+ABC-differentiated z.
 """
 
 from __future__ import annotations
@@ -89,15 +93,26 @@ def frontier(bt, calib, unit_price: np.ndarray, model: str, zs=Z_SWEEP) -> list[
     ]
 
 
-def cover_rule(bt, unit_price: np.ndarray, weeks=(2, 3, 4, 5)) -> list[PolicyResult]:
-    """Rule of thumb many customers run today: order up to N weeks of trailing-4-week average demand."""
-    demand = bt["ma4"].actuals[:, 0, :]
+COVER_GRID = tuple(float(w) for w in np.arange(1.0, 7.01, 0.25))
+
+
+def cover(bt, unit_price: np.ndarray, model: str = "ma4", weeks=COVER_GRID) -> list[PolicyResult]:
+    """Order up to N weeks of the model's next-week forecast (ma4 = the customer's current rule)."""
+    demand = bt[model].actuals[:, 0, :]
     return [
         PolicyResult(
-            f"cover_{w}w", float("nan"), **simulate(bt["ma4"].forecasts[:, 0, :] * w, demand, unit_price)
+            f"cover_{model}", float(w), **simulate(bt[model].forecasts[:, 0, :] * w, demand, unit_price)
         )
         for w in weeks
     ]
+
+
+def tune_cover(calib, unit_price: np.ndarray, model: str, target: float) -> float:
+    """Smallest N (in 0.25-week steps) that reaches ``target`` fill when simulated on the calibration block."""
+    for r in cover(calib, unit_price, model):
+        if r.fill_rate >= target:
+            return r.z
+    return COVER_GRID[-1]
 
 
 def inventory_at_fill(points: list[PolicyResult], target: float) -> float | None:

@@ -1,0 +1,91 @@
+{
+ "documents": 400,
+ "seconds": 13.83,
+ "ms_per_doc": 34.6,
+ "extraction": {
+  "documents": 400,
+  "doc_type_accuracy": 1.0,
+  "header_field_accuracy": 0.9993103448275862,
+  "field_accuracy": {
+   "carrier": 1.0,
+   "currency": 1.0,
+   "doc_date": 1.0,
+   "doc_number": 1.0,
+   "due_date": 1.0,
+   "po_number": 1.0,
+   "sender": 1.0,
+   "subtotal": 1.0,
+   "tax": 0.99,
+   "total": 1.0,
+   "total_weight_kg": 1.0
+  },
+  "line_precision": 0.9929,
+  "line_recall": 0.9929,
+  "line_f1": 0.9929,
+  "document_exact_match": 0.9575
+ },
+ "per_layout": {
+  "buy_juniper/pdf": {
+   "n": 60,
+   "header_field_accuracy": 1.0,
+   "line_f1": 1.0,
+   "document_exact_match": 1.0
+  },
+  "buy_juniper/txt": {
+   "n": 40,
+   "header_field_accuracy": 1.0,
+   "line_f1": 1.0,
+   "document_exact_match": 1.0
+  },
+  "car_iberia/pdf": {
+   "n": 100,
+   "header_field_accuracy": 1.0,
+   "line_f1": 1.0,
+   "document_exact_match": 1.0
+  },
+  "sup_es/pdf": {
+   "n": 100,
+   "header_field_accuracy": 1.0,
+   "line_f1": 1.0,
+   "document_exact_match": 1.0
+  },
+  "sup_scan/pdf": {
+   "n": 100,
+   "header_field_accuracy": 0.9978,
+   "line_f1": 0.9716,
+   "document_exact_match": 0.83
+  }
+ },
+ "issue_recall": {
+  "carton_mismatch": "8/8",
+  "due_before_issue": "11/11",
+  "duplicate_invoice": "8/8",
+  "price_mismatch_vs_list": "5/5",
+  "price_variance": "7/7",
+  "qty_exceeds_po": "30/30",
+  "qty_not_case_multiple": "4/4",
+  "total_mismatch": "15/15",
+  "unknown_po": "16/16",
+  "unknown_sku": "4/4"
+ },
+ "issue_recall_total": 1.0,
+ "clean_docs_sent_to_review": "11/292",
+ "straight_through_rate": 0.7025,
+ "straight_through_of_eligible": 0.9965,
+ "auto_approved_with_error": "0/281",
+ "review_reasons": {
+  "qty_exceeds_po": 30,
+  "total_mismatch": 18,
+  "unknown_po": 16,
+  "low_confidence:lines": 15,
+  "sku_not_on_po": 15,
+  "due_before_issue": 11,
+  "duplicate_invoice": 8,
+  "carton_mismatch": 8,
+  "price_variance": 7,
+  "price_mismatch_vs_list": 5,
+  "unknown_sku": 4,
+  "qty_not_case_multiple": 4
+ },
+ "seed": 4
+}

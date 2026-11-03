@@ -1,0 +1,3281 @@
+[
+{
+"file": "0000_sup_es.pdf",
+"route": "review",
+"reasons": [
+"unknown_po"
+],
+"doc_correct": true,
+"issues": [
+"unknown_po"
+]
+},
+{
+"file": "0001_sup_scan.pdf",
+"route": "review",
+"reasons": [
+"low_confidence:doc_date",
+"warning:ambiguous day/month order in doc_date, due_date"
+],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0002_car_iberia.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0003_buy_juniper.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0004_sup_es.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0005_sup_scan.pdf",
+"route": "review",
+"reasons": [
+"duplicate_invoice"
+],
+"doc_correct": true,
+"issues": [
+"duplicate_invoice"
+]
+},
+{
+"file": "0006_car_iberia.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0007_buy_juniper.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0008_sup_es.pdf",
+"route": "review",
+"reasons": [
+"price_variance"
+],
+"doc_correct": true,
+"issues": [
+"price_variance"
+]
+},
+{
+"file": "0009_sup_scan.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0010_car_iberia.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0011_buy_juniper.txt",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0012_sup_es.pdf",
+"route": "review",
+"reasons": [
+"duplicate_invoice"
+],
+"doc_correct": true,
+"issues": [
+"duplicate_invoice"
+]
+},
+{
+"file": "0013_sup_scan.pdf",
+"route": "review",
+"reasons": [
+"qty_exceeds_po"
+],
+"doc_correct": true,
+"issues": [
+"qty_exceeds_po"
+]
+},
+{
+"file": "0014_car_iberia.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0015_buy_juniper.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0016_sup_es.pdf",
+"route": "review",
+"reasons": [
+"qty_exceeds_po"
+],
+"doc_correct": true,
+"issues": [
+"qty_exceeds_po"
+]
+},
+{
+"file": "0017_sup_scan.pdf",
+"route": "review",
+"reasons": [
+"low_confidence:lines",
+"sku_not_on_po"
+],
+"doc_correct": false,
+"issues": []
+},
+{
+"file": "0018_car_iberia.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0019_buy_juniper.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0020_sup_es.pdf",
+"route": "review",
+"reasons": [
+"unknown_po"
+],
+"doc_correct": true,
+"issues": [
+"unknown_po"
+]
+},
+{
+"file": "0021_sup_scan.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0022_car_iberia.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0023_buy_juniper.pdf",
+"route": "review",
+"reasons": [
+"unknown_sku"
+],
+"doc_correct": true,
+"issues": [
+"unknown_sku"
+]
+},
+{
+"file": "0024_sup_es.pdf",
+"route": "review",
+"reasons": [
+"due_before_issue"
+],
+"doc_correct": true,
+"issues": [
+"due_before_issue"
+]
+},
+{
+"file": "0025_sup_scan.pdf",
+"route": "review",
+"reasons": [
+"total_mismatch"
+],
+"doc_correct": true,
+"issues": [
+"total_mismatch"
+]
+},
+{
+"file": "0026_car_iberia.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0027_buy_juniper.txt",
+"route": "review",
+"reasons": [
+"unknown_sku"
+],
+"doc_correct": true,
+"issues": [
+"unknown_sku"
+]
+},
+{
+"file": "0028_sup_es.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0029_sup_scan.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0030_car_iberia.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0031_buy_juniper.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0032_sup_es.pdf",
+"route": "review",
+"reasons": [
+"unknown_po"
+],
+"doc_correct": true,
+"issues": [
+"unknown_po"
+]
+},
+{
+"file": "0033_sup_scan.pdf",
+"route": "review",
+"reasons": [
+"low_confidence:lines",
+"sku_not_on_po"
+],
+"doc_correct": false,
+"issues": []
+},
+{
+"file": "0034_car_iberia.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0035_buy_juniper.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0036_sup_es.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0037_sup_scan.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0038_car_iberia.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0039_buy_juniper.pdf",
+"route": "review",
+"reasons": [
+"total_mismatch"
+],
+"doc_correct": true,
+"issues": [
+"total_mismatch"
+]
+},
+{
+"file": "0040_sup_es.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0041_sup_scan.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0042_car_iberia.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0043_buy_juniper.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0044_sup_es.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0045_sup_scan.pdf",
+"route": "review",
+"reasons": [
+"price_variance"
+],
+"doc_correct": true,
+"issues": [
+"price_variance"
+]
+},
+{
+"file": "0046_car_iberia.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0047_buy_juniper.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0048_sup_es.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0049_sup_scan.pdf",
+"route": "review",
+"reasons": [
+"unknown_po"
+],
+"doc_correct": true,
+"issues": [
+"unknown_po"
+]
+},
+{
+"file": "0050_car_iberia.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0051_buy_juniper.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0052_sup_es.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0053_sup_scan.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0054_car_iberia.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0055_buy_juniper.pdf",
+"route": "review",
+"reasons": [
+"unknown_sku"
+],
+"doc_correct": true,
+"issues": [
+"unknown_sku"
+]
+},
+{
+"file": "0056_sup_es.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0057_sup_scan.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0058_car_iberia.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0059_buy_juniper.txt",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0060_sup_es.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0061_sup_scan.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0062_car_iberia.pdf",
+"route": "review",
+"reasons": [
+"qty_exceeds_po"
+],
+"doc_correct": true,
+"issues": [
+"qty_exceeds_po"
+]
+},
+{
+"file": "0063_buy_juniper.txt",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0064_sup_es.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0065_sup_scan.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0066_car_iberia.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0067_buy_juniper.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0068_sup_es.pdf",
+"route": "review",
+"reasons": [
+"duplicate_invoice"
+],
+"doc_correct": true,
+"issues": [
+"duplicate_invoice"
+]
+},
+{
+"file": "0069_sup_scan.pdf",
+"route": "review",
+"reasons": [
+"low_confidence:lines",
+"sku_not_on_po",
+"total_mismatch"
+],
+"doc_correct": false,
+"issues": [
+"total_mismatch"
+]
+},
+{
+"file": "0070_car_iberia.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0071_buy_juniper.txt",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0072_sup_es.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0073_sup_scan.pdf",
+"route": "review",
+"reasons": [
+"due_before_issue"
+],
+"doc_correct": true,
+"issues": [
+"due_before_issue"
+]
+},
+{
+"file": "0074_car_iberia.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0075_buy_juniper.txt",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0076_sup_es.pdf",
+"route": "review",
+"reasons": [
+"qty_exceeds_po"
+],
+"doc_correct": true,
+"issues": [
+"qty_exceeds_po"
+]
+},
+{
+"file": "0077_sup_scan.pdf",
+"route": "review",
+"reasons": [
+"due_before_issue"
+],
+"doc_correct": true,
+"issues": [
+"due_before_issue"
+]
+},
+{
+"file": "0078_car_iberia.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0079_buy_juniper.txt",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0080_sup_es.pdf",
+"route": "review",
+"reasons": [
+"price_variance"
+],
+"doc_correct": true,
+"issues": [
+"price_variance"
+]
+},
+{
+"file": "0081_sup_scan.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0082_car_iberia.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0083_buy_juniper.txt",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0084_sup_es.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0085_sup_scan.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0086_car_iberia.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0087_buy_juniper.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0088_sup_es.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0089_sup_scan.pdf",
+"route": "review",
+"reasons": [
+"qty_exceeds_po"
+],
+"doc_correct": true,
+"issues": [
+"qty_exceeds_po"
+]
+},
+{
+"file": "0090_car_iberia.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0091_buy_juniper.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0092_sup_es.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0093_sup_scan.pdf",
+"route": "review",
+"reasons": [
+"duplicate_invoice"
+],
+"doc_correct": true,
+"issues": [
+"duplicate_invoice"
+]
+},
+{
+"file": "0094_car_iberia.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0095_buy_juniper.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0096_sup_es.pdf",
+"route": "review",
+"reasons": [
+"qty_exceeds_po"
+],
+"doc_correct": true,
+"issues": [
+"qty_exceeds_po"
+]
+},
+{
+"file": "0097_sup_scan.pdf",
+"route": "review",
+"reasons": [
+"total_mismatch"
+],
+"doc_correct": false,
+"issues": []
+},
+{
+"file": "0098_car_iberia.pdf",
+"route": "review",
+"reasons": [
+"qty_exceeds_po"
+],
+"doc_correct": true,
+"issues": [
+"qty_exceeds_po"
+]
+},
+{
+"file": "0099_buy_juniper.txt",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0100_sup_es.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0101_sup_scan.pdf",
+"route": "review",
+"reasons": [
+"total_mismatch"
+],
+"doc_correct": false,
+"issues": []
+},
+{
+"file": "0102_car_iberia.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0103_buy_juniper.txt",
+"route": "review",
+"reasons": [
+"total_mismatch"
+],
+"doc_correct": true,
+"issues": [
+"total_mismatch"
+]
+},
+{
+"file": "0104_sup_es.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0105_sup_scan.pdf",
+"route": "review",
+"reasons": [
+"total_mismatch"
+],
+"doc_correct": true,
+"issues": [
+"total_mismatch"
+]
+},
+{
+"file": "0106_car_iberia.pdf",
+"route": "review",
+"reasons": [
+"carton_mismatch"
+],
+"doc_correct": true,
+"issues": [
+"carton_mismatch"
+]
+},
+{
+"file": "0107_buy_juniper.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0108_sup_es.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0109_sup_scan.pdf",
+"route": "review",
+"reasons": [
+"low_confidence:lines",
+"sku_not_on_po",
+"total_mismatch"
+],
+"doc_correct": false,
+"issues": [
+"total_mismatch"
+]
+},
+{
+"file": "0110_car_iberia.pdf",
+"route": "review",
+"reasons": [
+"qty_exceeds_po"
+],
+"doc_correct": true,
+"issues": [
+"qty_exceeds_po"
+]
+},
+{
+"file": "0111_buy_juniper.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0112_sup_es.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0113_sup_scan.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0114_car_iberia.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0115_buy_juniper.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0116_sup_es.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0117_sup_scan.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0118_car_iberia.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0119_buy_juniper.pdf",
+"route": "review",
+"reasons": [
+"price_mismatch_vs_list"
+],
+"doc_correct": true,
+"issues": [
+"price_mismatch_vs_list"
+]
+},
+{
+"file": "0120_sup_es.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0121_sup_scan.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0122_car_iberia.pdf",
+"route": "review",
+"reasons": [
+"qty_exceeds_po"
+],
+"doc_correct": true,
+"issues": [
+"qty_exceeds_po"
+]
+},
+{
+"file": "0123_buy_juniper.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0124_sup_es.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0125_sup_scan.pdf",
+"route": "review",
+"reasons": [
+"low_confidence:lines",
+"sku_not_on_po"
+],
+"doc_correct": false,
+"issues": []
+},
+{
+"file": "0126_car_iberia.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0127_buy_juniper.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0128_sup_es.pdf",
+"route": "review",
+"reasons": [
+"due_before_issue"
+],
+"doc_correct": true,
+"issues": [
+"due_before_issue"
+]
+},
+{
+"file": "0129_sup_scan.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0130_car_iberia.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0131_buy_juniper.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0132_sup_es.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0133_sup_scan.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0134_car_iberia.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0135_buy_juniper.txt",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0136_sup_es.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0137_sup_scan.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0138_car_iberia.pdf",
+"route": "review",
+"reasons": [
+"carton_mismatch"
+],
+"doc_correct": true,
+"issues": [
+"carton_mismatch"
+]
+},
+{
+"file": "0139_buy_juniper.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0140_sup_es.pdf",
+"route": "review",
+"reasons": [
+"due_before_issue"
+],
+"doc_correct": true,
+"issues": [
+"due_before_issue"
+]
+},
+{
+"file": "0141_sup_scan.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0142_car_iberia.pdf",
+"route": "review",
+"reasons": [
+"carton_mismatch"
+],
+"doc_correct": true,
+"issues": [
+"carton_mismatch"
+]
+},
+{
+"file": "0143_buy_juniper.txt",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0144_sup_es.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0145_sup_scan.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0146_car_iberia.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0147_buy_juniper.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0148_sup_es.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0149_sup_scan.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0150_car_iberia.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0151_buy_juniper.txt",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0152_sup_es.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0153_sup_scan.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0154_car_iberia.pdf",
+"route": "review",
+"reasons": [
+"carton_mismatch"
+],
+"doc_correct": true,
+"issues": [
+"carton_mismatch"
+]
+},
+{
+"file": "0155_buy_juniper.txt",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0156_sup_es.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0157_sup_scan.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0158_car_iberia.pdf",
+"route": "review",
+"reasons": [
+"qty_exceeds_po"
+],
+"doc_correct": true,
+"issues": [
+"qty_exceeds_po"
+]
+},
+{
+"file": "0159_buy_juniper.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0160_sup_es.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0161_sup_scan.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0162_car_iberia.pdf",
+"route": "review",
+"reasons": [
+"qty_exceeds_po"
+],
+"doc_correct": true,
+"issues": [
+"qty_exceeds_po"
+]
+},
+{
+"file": "0163_buy_juniper.txt",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0164_sup_es.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0165_sup_scan.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0166_car_iberia.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0167_buy_juniper.txt",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0168_sup_es.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0169_sup_scan.pdf",
+"route": "review",
+"reasons": [
+"qty_exceeds_po"
+],
+"doc_correct": true,
+"issues": [
+"qty_exceeds_po"
+]
+},
+{
+"file": "0170_car_iberia.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0171_buy_juniper.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0172_sup_es.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0173_sup_scan.pdf",
+"route": "review",
+"reasons": [
+"due_before_issue",
+"low_confidence:lines",
+"sku_not_on_po"
+],
+"doc_correct": false,
+"issues": [
+"due_before_issue"
+]
+},
+{
+"file": "0174_car_iberia.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0175_buy_juniper.pdf",
+"route": "review",
+"reasons": [
+"price_mismatch_vs_list"
+],
+"doc_correct": true,
+"issues": [
+"price_mismatch_vs_list"
+]
+},
+{
+"file": "0176_sup_es.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0177_sup_scan.pdf",
+"route": "review",
+"reasons": [
+"qty_exceeds_po"
+],
+"doc_correct": true,
+"issues": [
+"qty_exceeds_po"
+]
+},
+{
+"file": "0178_car_iberia.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0179_buy_juniper.pdf",
+"route": "review",
+"reasons": [
+"total_mismatch"
+],
+"doc_correct": true,
+"issues": [
+"total_mismatch"
+]
+},
+{
+"file": "0180_sup_es.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0181_sup_scan.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0182_car_iberia.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0183_buy_juniper.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0184_sup_es.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0185_sup_scan.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0186_car_iberia.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0187_buy_juniper.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0188_sup_es.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0189_sup_scan.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0190_car_iberia.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0191_buy_juniper.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0192_sup_es.pdf",
+"route": "review",
+"reasons": [
+"unknown_po"
+],
+"doc_correct": true,
+"issues": [
+"unknown_po"
+]
+},
+{
+"file": "0193_sup_scan.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0194_car_iberia.pdf",
+"route": "review",
+"reasons": [
+"unknown_po"
+],
+"doc_correct": true,
+"issues": [
+"unknown_po"
+]
+},
+{
+"file": "0195_buy_juniper.txt",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0196_sup_es.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0197_sup_scan.pdf",
+"route": "review",
+"reasons": [
+"line_math",
+"low_confidence:lines",
+"sku_not_on_po",
+"total_mismatch"
+],
+"doc_correct": false,
+"issues": []
+},
+{
+"file": "0198_car_iberia.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0199_buy_juniper.txt",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0200_sup_es.pdf",
+"route": "review",
+"reasons": [
+"due_before_issue"
+],
+"doc_correct": true,
+"issues": [
+"due_before_issue"
+]
+},
+{
+"file": "0201_sup_scan.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0202_car_iberia.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0203_buy_juniper.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0204_sup_es.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0205_sup_scan.pdf",
+"route": "review",
+"reasons": [
+"due_before_issue",
+"low_confidence:lines",
+"sku_not_on_po"
+],
+"doc_correct": false,
+"issues": [
+"due_before_issue"
+]
+},
+{
+"file": "0206_car_iberia.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0207_buy_juniper.pdf",
+"route": "review",
+"reasons": [
+"total_mismatch"
+],
+"doc_correct": true,
+"issues": [
+"total_mismatch"
+]
+},
+{
+"file": "0208_sup_es.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0209_sup_scan.pdf",
+"route": "review",
+"reasons": [
+"low_confidence:lines",
+"sku_not_on_po"
+],
+"doc_correct": false,
+"issues": []
+},
+{
+"file": "0210_car_iberia.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0211_buy_juniper.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0212_sup_es.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0213_sup_scan.pdf",
+"route": "review",
+"reasons": [
+"low_confidence:lines",
+"qty_exceeds_po",
+"sku_not_on_po"
+],
+"doc_correct": false,
+"issues": [
+"qty_exceeds_po"
+]
+},
+{
+"file": "0214_car_iberia.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0215_buy_juniper.txt",
+"route": "review",
+"reasons": [
+"price_mismatch_vs_list"
+],
+"doc_correct": true,
+"issues": [
+"price_mismatch_vs_list"
+]
+},
+{
+"file": "0216_sup_es.pdf",
+"route": "review",
+"reasons": [
+"unknown_po"
+],
+"doc_correct": true,
+"issues": [
+"unknown_po"
+]
+},
+{
+"file": "0217_sup_scan.pdf",
+"route": "review",
+"reasons": [
+"price_variance"
+],
+"doc_correct": true,
+"issues": [
+"price_variance"
+]
+},
+{
+"file": "0218_car_iberia.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0219_buy_juniper.pdf",
+"route": "review",
+"reasons": [
+"qty_not_case_multiple"
+],
+"doc_correct": true,
+"issues": [
+"qty_not_case_multiple"
+]
+},
+{
+"file": "0220_sup_es.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0221_sup_scan.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0222_car_iberia.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0223_buy_juniper.txt",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0224_sup_es.pdf",
+"route": "review",
+"reasons": [
+"unknown_po"
+],
+"doc_correct": true,
+"issues": [
+"unknown_po"
+]
+},
+{
+"file": "0225_sup_scan.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0226_car_iberia.pdf",
+"route": "review",
+"reasons": [
+"carton_mismatch"
+],
+"doc_correct": true,
+"issues": [
+"carton_mismatch"
+]
+},
+{
+"file": "0227_buy_juniper.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0228_sup_es.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0229_sup_scan.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0230_car_iberia.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0231_buy_juniper.txt",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0232_sup_es.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0233_sup_scan.pdf",
+"route": "review",
+"reasons": [
+"low_confidence:lines",
+"sku_not_on_po"
+],
+"doc_correct": false,
+"issues": []
+},
+{
+"file": "0234_car_iberia.pdf",
+"route": "review",
+"reasons": [
+"qty_exceeds_po"
+],
+"doc_correct": true,
+"issues": [
+"qty_exceeds_po"
+]
+},
+{
+"file": "0235_buy_juniper.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0236_sup_es.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0237_sup_scan.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0238_car_iberia.pdf",
+"route": "review",
+"reasons": [
+"qty_exceeds_po"
+],
+"doc_correct": true,
+"issues": [
+"qty_exceeds_po"
+]
+},
+{
+"file": "0239_buy_juniper.txt",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0240_sup_es.pdf",
+"route": "review",
+"reasons": [
+"unknown_po"
+],
+"doc_correct": true,
+"issues": [
+"unknown_po"
+]
+},
+{
+"file": "0241_sup_scan.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0242_car_iberia.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0243_buy_juniper.pdf",
+"route": "review",
+"reasons": [
+"unknown_sku"
+],
+"doc_correct": true,
+"issues": [
+"unknown_sku"
+]
+},
+{
+"file": "0244_sup_es.pdf",
+"route": "review",
+"reasons": [
+"qty_exceeds_po"
+],
+"doc_correct": true,
+"issues": [
+"qty_exceeds_po"
+]
+},
+{
+"file": "0245_sup_scan.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0246_car_iberia.pdf",
+"route": "review",
+"reasons": [
+"qty_exceeds_po"
+],
+"doc_correct": true,
+"issues": [
+"qty_exceeds_po"
+]
+},
+{
+"file": "0247_buy_juniper.txt",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0248_sup_es.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0249_sup_scan.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0250_car_iberia.pdf",
+"route": "review",
+"reasons": [
+"carton_mismatch"
+],
+"doc_correct": true,
+"issues": [
+"carton_mismatch"
+]
+},
+{
+"file": "0251_buy_juniper.txt",
+"route": "review",
+"reasons": [
+"qty_not_case_multiple"
+],
+"doc_correct": true,
+"issues": [
+"qty_not_case_multiple"
+]
+},
+{
+"file": "0252_sup_es.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0253_sup_scan.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0254_car_iberia.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0255_buy_juniper.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0256_sup_es.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0257_sup_scan.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0258_car_iberia.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0259_buy_juniper.txt",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0260_sup_es.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0261_sup_scan.pdf",
+"route": "review",
+"reasons": [
+"duplicate_invoice"
+],
+"doc_correct": true,
+"issues": [
+"duplicate_invoice"
+]
+},
+{
+"file": "0262_car_iberia.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0263_buy_juniper.pdf",
+"route": "review",
+"reasons": [
+"qty_not_case_multiple"
+],
+"doc_correct": true,
+"issues": [
+"qty_not_case_multiple"
+]
+},
+{
+"file": "0264_sup_es.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0265_sup_scan.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0266_car_iberia.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0267_buy_juniper.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0268_sup_es.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0269_sup_scan.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0270_car_iberia.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0271_buy_juniper.txt",
+"route": "review",
+"reasons": [
+"price_mismatch_vs_list"
+],
+"doc_correct": true,
+"issues": [
+"price_mismatch_vs_list"
+]
+},
+{
+"file": "0272_sup_es.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0273_sup_scan.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0274_car_iberia.pdf",
+"route": "review",
+"reasons": [
+"unknown_po"
+],
+"doc_correct": true,
+"issues": [
+"unknown_po"
+]
+},
+{
+"file": "0275_buy_juniper.txt",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0276_sup_es.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0277_sup_scan.pdf",
+"route": "review",
+"reasons": [
+"low_confidence:lines",
+"sku_not_on_po"
+],
+"doc_correct": false,
+"issues": []
+},
+{
+"file": "0278_car_iberia.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0279_buy_juniper.txt",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0280_sup_es.pdf",
+"route": "review",
+"reasons": [
+"duplicate_invoice"
+],
+"doc_correct": true,
+"issues": [
+"duplicate_invoice"
+]
+},
+{
+"file": "0281_sup_scan.pdf",
+"route": "review",
+"reasons": [
+"total_mismatch"
+],
+"doc_correct": true,
+"issues": [
+"total_mismatch"
+]
+},
+{
+"file": "0282_car_iberia.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0283_buy_juniper.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0284_sup_es.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0285_sup_scan.pdf",
+"route": "review",
+"reasons": [
+"qty_exceeds_po"
+],
+"doc_correct": true,
+"issues": [
+"qty_exceeds_po"
+]
+},
+{
+"file": "0286_car_iberia.pdf",
+"route": "review",
+"reasons": [
+"carton_mismatch"
+],
+"doc_correct": true,
+"issues": [
+"carton_mismatch"
+]
+},
+{
+"file": "0287_buy_juniper.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0288_sup_es.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0289_sup_scan.pdf",
+"route": "review",
+"reasons": [
+"price_variance"
+],
+"doc_correct": true,
+"issues": [
+"price_variance"
+]
+},
+{
+"file": "0290_car_iberia.pdf",
+"route": "review",
+"reasons": [
+"unknown_po"
+],
+"doc_correct": true,
+"issues": [
+"unknown_po"
+]
+},
+{
+"file": "0291_buy_juniper.txt",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0292_sup_es.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0293_sup_scan.pdf",
+"route": "review",
+"reasons": [
+"qty_exceeds_po"
+],
+"doc_correct": true,
+"issues": [
+"qty_exceeds_po"
+]
+},
+{
+"file": "0294_car_iberia.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0295_buy_juniper.txt",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0296_sup_es.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0297_sup_scan.pdf",
+"route": "review",
+"reasons": [
+"unknown_po"
+],
+"doc_correct": true,
+"issues": [
+"unknown_po"
+]
+},
+{
+"file": "0298_car_iberia.pdf",
+"route": "review",
+"reasons": [
+"qty_exceeds_po"
+],
+"doc_correct": true,
+"issues": [
+"qty_exceeds_po"
+]
+},
+{
+"file": "0299_buy_juniper.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0300_sup_es.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0301_sup_scan.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0302_car_iberia.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0303_buy_juniper.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0304_sup_es.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0305_sup_scan.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0306_car_iberia.pdf",
+"route": "review",
+"reasons": [
+"unknown_po"
+],
+"doc_correct": true,
+"issues": [
+"unknown_po"
+]
+},
+{
+"file": "0307_buy_juniper.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0308_sup_es.pdf",
+"route": "review",
+"reasons": [
+"qty_exceeds_po"
+],
+"doc_correct": true,
+"issues": [
+"qty_exceeds_po"
+]
+},
+{
+"file": "0309_sup_scan.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0310_car_iberia.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0311_buy_juniper.txt",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0312_sup_es.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0313_sup_scan.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0314_car_iberia.pdf",
+"route": "review",
+"reasons": [
+"qty_exceeds_po"
+],
+"doc_correct": true,
+"issues": [
+"qty_exceeds_po"
+]
+},
+{
+"file": "0315_buy_juniper.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0316_sup_es.pdf",
+"route": "review",
+"reasons": [
+"qty_exceeds_po"
+],
+"doc_correct": true,
+"issues": [
+"qty_exceeds_po"
+]
+},
+{
+"file": "0317_sup_scan.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0318_car_iberia.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0319_buy_juniper.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0320_sup_es.pdf",
+"route": "review",
+"reasons": [
+"unknown_po"
+],
+"doc_correct": true,
+"issues": [
+"unknown_po"
+]
+},
+{
+"file": "0321_sup_scan.pdf",
+"route": "review",
+"reasons": [
+"due_before_issue"
+],
+"doc_correct": true,
+"issues": [
+"due_before_issue"
+]
+},
+{
+"file": "0322_car_iberia.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0323_buy_juniper.pdf",
+"route": "review",
+"reasons": [
+"qty_not_case_multiple"
+],
+"doc_correct": true,
+"issues": [
+"qty_not_case_multiple"
+]
+},
+{
+"file": "0324_sup_es.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0325_sup_scan.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0326_car_iberia.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0327_buy_juniper.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0328_sup_es.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0329_sup_scan.pdf",
+"route": "review",
+"reasons": [
+"low_confidence:lines",
+"sku_not_on_po"
+],
+"doc_correct": false,
+"issues": []
+},
+{
+"file": "0330_car_iberia.pdf",
+"route": "review",
+"reasons": [
+"unknown_po"
+],
+"doc_correct": true,
+"issues": [
+"unknown_po"
+]
+},
+{
+"file": "0331_buy_juniper.txt",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0332_sup_es.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0333_sup_scan.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0334_car_iberia.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0335_buy_juniper.txt",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0336_sup_es.pdf",
+"route": "review",
+"reasons": [
+"unknown_po"
+],
+"doc_correct": true,
+"issues": [
+"unknown_po"
+]
+},
+{
+"file": "0337_sup_scan.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0338_car_iberia.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0339_buy_juniper.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0340_sup_es.pdf",
+"route": "review",
+"reasons": [
+"qty_exceeds_po"
+],
+"doc_correct": true,
+"issues": [
+"qty_exceeds_po"
+]
+},
+{
+"file": "0341_sup_scan.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0342_car_iberia.pdf",
+"route": "review",
+"reasons": [
+"qty_exceeds_po"
+],
+"doc_correct": true,
+"issues": [
+"qty_exceeds_po"
+]
+},
+{
+"file": "0343_buy_juniper.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0344_sup_es.pdf",
+"route": "review",
+"reasons": [
+"duplicate_invoice"
+],
+"doc_correct": true,
+"issues": [
+"duplicate_invoice"
+]
+},
+{
+"file": "0345_sup_scan.pdf",
+"route": "review",
+"reasons": [
+"duplicate_invoice"
+],
+"doc_correct": true,
+"issues": [
+"duplicate_invoice"
+]
+},
+{
+"file": "0346_car_iberia.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0347_buy_juniper.txt",
+"route": "review",
+"reasons": [
+"total_mismatch"
+],
+"doc_correct": true,
+"issues": [
+"total_mismatch"
+]
+},
+{
+"file": "0348_sup_es.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0349_sup_scan.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0350_car_iberia.pdf",
+"route": "review",
+"reasons": [
+"qty_exceeds_po"
+],
+"doc_correct": true,
+"issues": [
+"qty_exceeds_po"
+]
+},
+{
+"file": "0351_buy_juniper.txt",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0352_sup_es.pdf",
+"route": "review",
+"reasons": [
+"price_variance"
+],
+"doc_correct": true,
+"issues": [
+"price_variance"
+]
+},
+{
+"file": "0353_sup_scan.pdf",
+"route": "review",
+"reasons": [
+"low_confidence:lines",
+"sku_not_on_po",
+"total_mismatch"
+],
+"doc_correct": false,
+"issues": [
+"total_mismatch"
+]
+},
+{
+"file": "0354_car_iberia.pdf",
+"route": "review",
+"reasons": [
+"qty_exceeds_po"
+],
+"doc_correct": true,
+"issues": [
+"qty_exceeds_po"
+]
+},
+{
+"file": "0355_buy_juniper.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0356_sup_es.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0357_sup_scan.pdf",
+"route": "review",
+"reasons": [
+"low_confidence:lines",
+"sku_not_on_po",
+"total_mismatch"
+],
+"doc_correct": false,
+"issues": [
+"total_mismatch"
+]
+},
+{
+"file": "0358_car_iberia.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0359_buy_juniper.pdf",
+"route": "review",
+"reasons": [
+"total_mismatch"
+],
+"doc_correct": true,
+"issues": [
+"total_mismatch"
+]
+},
+{
+"file": "0360_sup_es.pdf",
+"route": "review",
+"reasons": [
+"total_mismatch"
+],
+"doc_correct": true,
+"issues": [
+"total_mismatch"
+]
+},
+{
+"file": "0361_sup_scan.pdf",
+"route": "review",
+"reasons": [
+"total_mismatch"
+],
+"doc_correct": true,
+"issues": [
+"total_mismatch"
+]
+},
+{
+"file": "0362_car_iberia.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0363_buy_juniper.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0364_sup_es.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0365_sup_scan.pdf",
+"route": "review",
+"reasons": [
+"due_before_issue"
+],
+"doc_correct": true,
+"issues": [
+"due_before_issue"
+]
+},
+{
+"file": "0366_car_iberia.pdf",
+"route": "review",
+"reasons": [
+"qty_exceeds_po"
+],
+"doc_correct": true,
+"issues": [
+"qty_exceeds_po"
+]
+},
+{
+"file": "0367_buy_juniper.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0368_sup_es.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0369_sup_scan.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0370_car_iberia.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0371_buy_juniper.txt",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0372_sup_es.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0373_sup_scan.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0374_car_iberia.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0375_buy_juniper.txt",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0376_sup_es.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0377_sup_scan.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0378_car_iberia.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0379_buy_juniper.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0380_sup_es.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0381_sup_scan.pdf",
+"route": "review",
+"reasons": [
+"due_before_issue"
+],
+"doc_correct": true,
+"issues": [
+"due_before_issue"
+]
+},
+{
+"file": "0382_car_iberia.pdf",
+"route": "review",
+"reasons": [
+"carton_mismatch"
+],
+"doc_correct": true,
+"issues": [
+"carton_mismatch"
+]
+},
+{
+"file": "0383_buy_juniper.txt",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0384_sup_es.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0385_sup_scan.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0386_car_iberia.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0387_buy_juniper.txt",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0388_sup_es.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0389_sup_scan.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0390_car_iberia.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0391_buy_juniper.txt",
+"route": "review",
+"reasons": [
+"price_mismatch_vs_list"
+],
+"doc_correct": true,
+"issues": [
+"price_mismatch_vs_list"
+]
+},
+{
+"file": "0392_sup_es.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0393_sup_scan.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0394_car_iberia.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0395_buy_juniper.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0396_sup_es.pdf",
+"route": "review",
+"reasons": [
+"price_variance"
+],
+"doc_correct": true,
+"issues": [
+"price_variance"
+]
+},
+{
+"file": "0397_sup_scan.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+},
+{
+"file": "0398_car_iberia.pdf",
+"route": "review",
+"reasons": [
+"qty_exceeds_po"
+],
+"doc_correct": true,
+"issues": [
+"qty_exceeds_po"
+]
+},
+{
+"file": "0399_buy_juniper.pdf",
+"route": "auto_approve",
+"reasons": [],
+"doc_correct": true,
+"issues": []
+}
+]

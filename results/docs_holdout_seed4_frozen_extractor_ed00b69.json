@@ -1,0 +1,91 @@
+{
+ "documents": 400,
+ "seconds": 14.83,
+ "ms_per_doc": 37.1,
+ "extraction": {
+  "documents": 400,
+  "doc_type_accuracy": 1.0,
+  "header_field_accuracy": 0.8937931034482759,
+  "field_accuracy": {
+   "carrier": 1.0,
+   "currency": 1.0,
+   "doc_date": 0.75,
+   "doc_number": 0.4975,
+   "due_date": 1.0,
+   "po_number": 1.0,
+   "sender": 1.0,
+   "subtotal": 0.995,
+   "tax": 0.99,
+   "total": 0.9867,
+   "total_weight_kg": 1.0
+  },
+  "line_precision": 0.7479,
+  "line_recall": 0.7479,
+  "line_f1": 0.7479,
+  "document_exact_match": 0.25
+ },
+ "per_layout": {
+  "buy_juniper/pdf": {
+   "n": 60,
+   "header_field_accuracy": 0.8,
+   "line_f1": 1.0,
+   "document_exact_match": 0.0
+  },
+  "buy_juniper/txt": {
+   "n": 40,
+   "header_field_accuracy": 0.8,
+   "line_f1": 1.0,
+   "document_exact_match": 0.0
+  },
+  "car_iberia/pdf": {
+   "n": 100,
+   "header_field_accuracy": 0.8333,
+   "line_f1": 1.0,
+   "document_exact_match": 0.0
+  },
+  "sup_es/pdf": {
+   "n": 100,
+   "header_field_accuracy": 1.0,
+   "line_f1": 1.0,
+   "document_exact_match": 1.0
+  },
+  "sup_scan/pdf": {
+   "n": 100,
+   "header_field_accuracy": 0.88,
+   "line_f1": 0.0,
+   "document_exact_match": 0.0
+  }
+ },
+ "issue_recall": {
+  "carton_mismatch": "8/8",
+  "due_before_issue": "4/11",
+  "duplicate_invoice": "8/8",
+  "price_mismatch_vs_list": "5/5",
+  "price_variance": "4/7",
+  "qty_exceeds_po": "30/30",
+  "qty_not_case_multiple": "4/4",
+  "total_mismatch": "15/15",
+  "unknown_po": "16/16",
+  "unknown_sku": "4/4"
+ },
+ "issue_recall_total": 0.9074,
+ "clean_docs_sent_to_review": "221/292",
+ "straight_through_rate": 0.1775,
+ "straight_through_of_eligible": 1.0,
+ "auto_approved_with_error": "0/71",
+ "review_reasons": {
+  "missing_field": 300,
+  "low_confidence:doc_number": 200,
+  "low_confidence:doc_date": 92,
+  "qty_exceeds_po": 30,
+  "total_mismatch": 18,
+  "unknown_po": 16,
+  "sku_not_on_po": 15,
+  "low_confidence:lines": 14,
+  "duplicate_invoice": 8,
+  "carton_mismatch": 8,
+  "price_mismatch_vs_list": 5,
+  "price_variance": 4
+ },
+ "seed": 4
+}
