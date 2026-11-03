@@ -37,7 +37,17 @@ REGION_OF = {
     "Czech Republic": "South-East EU",
     "Lithuania": "South-East EU",
 }
-REGIONS = ["UK", "Ireland", "DACH", "France", "Benelux", "Iberia", "Nordics", "South-East EU", "Rest of World"]
+REGIONS = [
+    "UK",
+    "Ireland",
+    "DACH",
+    "France",
+    "Benelux",
+    "Iberia",
+    "Nordics",
+    "South-East EU",
+    "Rest of World",
+]
 DCS = ["DC-Midlands (UK)", "DC-Rotterdam (NL)", "DC-Valencia (ES)"]
 # Approximate road/ferry km from each DC to each region's demand centre (illustrative).
 KM = np.array(

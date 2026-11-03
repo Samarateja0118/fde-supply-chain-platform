@@ -87,7 +87,9 @@ def _cost(net: Network, shipped: np.ndarray, method: str, seconds: float, gap=No
         unmet_units=float(unmet.sum()),
         seconds=seconds,
         mip_gap=gap,
-        min_region_fill=float((np.minimum(served, net.demand).sum(axis=1) / np.maximum(net.demand.sum(axis=1), 1)).min()),
+        min_region_fill=float(
+            (np.minimum(served, net.demand).sum(axis=1) / np.maximum(net.demand.sum(axis=1), 1)).min()
+        ),
     )
 
 
