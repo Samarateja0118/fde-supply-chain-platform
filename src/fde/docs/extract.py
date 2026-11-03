@@ -166,6 +166,9 @@ ORDER_REF = [
     "po number",
     "po no",
     "po #",
+    "p.o. number",
+    "p.o. no",
+    "p.o. #",
     "purchase order no",
     "purchase order",
     "order reference",
@@ -210,6 +213,7 @@ HEADER_ALIASES = {
         "waybill no",
         "consignment no",
         "albaran n",
+        "albaran no",
         "delivery note no",
     ],
     "doc_date": [
@@ -227,6 +231,9 @@ HEADER_ALIASES = {
         "datum",
         "order date",
         "date de commande",
+        "tax point",
+        "date issued",
+        "issue date",
         "date",
     ],
     "due_date": [
@@ -430,11 +437,34 @@ def _value(fld: str, text: str, ctx: dict):
     return None
 
 
+OCR_CLASS = {
+    "o": "[o0]",
+    "l": "[l1i]",
+    "i": "[i1l]",
+    "s": "[s5]",
+    "b": "[b8]",
+    "e": "[e]",
+    "g": "[g9]",
+    "z": "[z2]",
+}
+
+
+def _alias_pattern(alias: str) -> re.Pattern:
+    """Alias regex tolerant to OCR confusions in the label itself ("T0tal", "lnvoice")."""
+    parts = [OCR_CLASS.get(c, re.escape(c)) for c in fold(alias)]
+    return re.compile("".join(parts) + r"(?![a-z])")
+
+
+_PATTERNS: dict[str, re.Pattern] = {}
+
+
 def _match_alias(chunk: str, aliases: list[str]) -> str | None:
     f = fold(chunk)
     for a in sorted(aliases, key=len, reverse=True):
-        fa = fold(a)
-        if f.startswith(fa) and (len(f) == len(fa) or not f[len(fa)].isalpha()):
+        pat = _PATTERNS.get(a)
+        if pat is None:
+            pat = _PATTERNS[a] = _alias_pattern(a)
+        if pat.match(f):
             return a
     return None
 
@@ -560,7 +590,7 @@ class RuleBasedExtractor:
                 alias, fld = hit
                 if fld in found:
                     continue
-                rest = ch.text[len(alias) :] if fold(ch.text).startswith(fold(alias)) else ch.text
+                rest = ch.text[len(alias) :]
                 # 1) same chunk: "Invoice No: BW10000"
                 v = _value(fld, self._strip_label_tail(rest), ctx)
                 if v is not None:
@@ -658,7 +688,12 @@ class RuleBasedExtractor:
                     break
             if not matched:
                 i += 1
-        return cols
+        # A column owns the horizontal band up to the next column's header, so right-aligned values
+        # under a short header ("Rate      0.91") are not pulled into the neighbouring column.
+        cols.sort(key=lambda c: c[1])
+        return [
+            (c[0], c[1], (cols[i + 1][1] - 1) if i + 1 < len(cols) else c[2] + 80) for i, c in enumerate(cols)
+        ]
 
     def _parse_rows(self, rows: list[Line], columns, ctx) -> tuple[list[LineItem], list[float]]:
         numeric = [c for c in columns if c[0] in NUMERIC_COLS]
@@ -671,6 +706,7 @@ class RuleBasedExtractor:
                 continue
             vals: dict[str, tuple[float, float]] = {}  # col -> (value, distance)
             desc, sku, sku_dist, sku_raw = [], None, 1e9, ""
+            cands: list[tuple[Word, float]] = []
             for w in row.words:
                 num = (
                     parse_number(w.text, ctx["locale"])
@@ -686,12 +722,22 @@ class RuleBasedExtractor:
                         sku, sku_dist, sku_raw = normalize_sku(w.text), d, w.text
                         continue
                 if num is not None and w.x1 >= first_numeric_x - GAP_PT:
-                    col = min(numeric, key=lambda c: _dist(w, c))
-                    d = _dist(w, col)
-                    if col[0] not in vals or d < vals[col[0]][1]:
-                        vals[col[0]] = (num, d)
+                    cands.append((w, num))
                     continue
                 desc.append(w.text)
+            # One value per column: assign the closest (word, column) pairs first; ties go to the
+            # word nearest the column's left edge. A second number that lands in an already-taken
+            # band then falls through to the nearest free column instead of being dropped.
+            pairs = sorted(
+                (_dist(w, c), abs(w.x0 - c[1]), i, c[0]) for i, (w, _) in enumerate(cands) for c in numeric
+            )
+            used_words: set[int] = set()
+            for d, _, i, col in pairs:
+                if i in used_words or col in vals:
+                    continue
+                vals[col] = (cands[i][1], d)
+                used_words.add(i)
+            desc += [cands[i][0].text for i in range(len(cands)) if i not in used_words]
             if sku is None and "qty" not in vals:
                 continue
             qty = vals.get("qty", (None,))[0]
@@ -699,8 +745,11 @@ class RuleBasedExtractor:
             amount = vals.get("amount", (None,))[0]
             cartons = vals.get("cartons", (None,))[0]
             c = 0.9
+            expected = {col[0] for col in numeric} - {"pos"}
             if qty is None or sku is None:
                 c = 0.4
+            elif expected - set(vals):
+                c = 0.5  # a column the table promises is empty on this row: never auto-approve
             elif price is not None and amount is not None:
                 c = 0.97 if abs(qty * price - amount) <= 0.011 + 0.0005 * amount else 0.55
             items.append(

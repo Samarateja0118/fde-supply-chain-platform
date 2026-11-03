@@ -10,6 +10,7 @@ Reported per split (dev layouts vs held-out layouts):
 from __future__ import annotations
 
 import json
+import shutil
 import time
 from collections import Counter, defaultdict
 from pathlib import Path
@@ -38,6 +39,7 @@ CATCHES = {
 def run(
     catalog: dict, styles: list[Style], known_senders: list[str], n_docs: int, out_dir: Path, seed: int
 ) -> dict:
+    shutil.rmtree(out_dir, ignore_errors=True)
     world = World(catalog)
     manifest = generate(world, styles, n_docs, out_dir, seed=seed)
     md = MasterData.from_world_json(json.loads(json.dumps(world.to_json())))

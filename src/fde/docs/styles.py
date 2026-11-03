@@ -33,6 +33,8 @@ class Style:
     email_share: float = 0.0  # share of documents delivered as plain-text email bodies
     noise_rate: float = 0.0  # OCR-style character confusion rate (simulated scanned PDFs)
     footer: list[str] = field(default_factory=list)
+    sku_fmt: str = "plain"  # plain "85123A" | hyphen "85123-A" | lower "85123a"
+    right_align_numbers: bool = False
 
 
 DEV_STYLES: list[Style] = [

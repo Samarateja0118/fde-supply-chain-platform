@@ -15,6 +15,14 @@ WIDTH = {"pos": 5, "sku": 13, "description": 34, "qty": 9, "cartons": 8, "unit_p
 Row = list[tuple[int, str]]  # (column in characters, text)
 
 
+def _sku(sku: str, style: Style) -> str:
+    if style.sku_fmt == "hyphen" and len(sku) > 5:
+        return sku[:5] + "-" + sku[5:]
+    if style.sku_fmt == "lower":
+        return sku.lower()
+    return sku
+
+
 def _date(iso: str | None, style: Style) -> str:
     return date.fromisoformat(iso).strftime(style.date_fmt) if iso else ""
 
@@ -93,8 +101,11 @@ def layout(truth: dict, style: Style) -> list[Row]:
             elif fld == "description":
                 v = li["description"][:32]
             else:
-                v = li[fld]
-            cells.append((pos[fld], v))
+                v = _sku(li[fld], style)
+            x = pos[fld]
+            if style.right_align_numbers and fld in ("qty", "cartons", "unit_price", "amount"):
+                x = pos[fld] + WIDTH[fld] - 2 - len(v)
+            cells.append((x, v))
         rows.append(cells)
     rows.append([])
 
