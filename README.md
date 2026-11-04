@@ -1,5 +1,7 @@
 # FDE supply-chain platform
 
+[![ci](https://github.com/Samarateja0118/fde-supply-chain-platform/actions/workflows/ci.yml/badge.svg)](https://github.com/Samarateja0118/fde-supply-chain-platform/actions/workflows/ci.yml)
+
 A forward-deployed-engineering project built as if for one customer, a (fictional) homewares
 distributor called Harbor & Pine. It has the three things such a deployment usually needs:
 
@@ -19,6 +21,12 @@ There is no LLM in the loop. No model API key was available while this was built
 is rule-based and layout-aware (pdfplumber word positions plus a multilingual label vocabulary).
 The `Extractor` protocol in `src/fde/docs/extract.py` is where an LLM or a vendor IDP service
 would plug in; validation, routing and the review queue don't depend on which extractor runs.
+
+**At a glance** (details in [Measured results](#measured-results)):
+
+- On 4 held-out document layouts written after the extractor was frozen, it got only 25% of documents fully right but **auto-approved 0 of the wrong ones**; everything uncertain went to review. After one onboarding round: 95.8% exact, 70.3% straight-through, still 0 wrong auto-approvals.
+- Forecasts on real UCI Online Retail data: LightGBM + SES ensemble WAPE 0.530, 8.6% better than a 4-week moving average.
+- Legacy intake (cp1252 CSV, EBCDIC fixed-width, flaky REST API) reconciles exactly: row count, quantity and revenue match the source, and the weekly demand matrix is bit-identical to one built from the original file. Every row of the runbook's troubleshooting table is reproduced by a fixture or a test.
 
 ```bash
 make demo          # Docker: Postgres + mock ERP (with faults) + full pipeline; then review UI on :8000/review
